@@ -1,0 +1,57 @@
+/* Estilo general para el contenedor del componente Telefono */
+.telefono-container {
+    width: 100%; /* El contenedor ocupará el 100% del ancho de la página */
+    height: auto;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 10px 0; /* Añade un poco de espacio en la parte superior e inferior */
+    background: linear-gradient(to bottom, #f0f0f0, #dcdcdc); /* Degradado gris más claro */
+  }
+  
+  .telefono-heading {
+    text-align: center; /* Centra el texto */
+    font-size: 1.5rem; /* Tamaño de fuente ajustado */
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    position: relative; /* Necesario para el pseudo-elemento */
+    display: inline-block; /* Hace que el texto no ocupe todo el ancho */
+  }
+  .contact-link{
+    text-decoration: none;
+  }
+  .contact-link:hover{
+    text-decoration: underline;
+  }
+  .telefono-whatsapp{
+    padding-left: 10px;
+  }
+  .bi-telephone-forward-fill{
+    padding-left:10px ;
+  }
+  /* Añadir la línea degradada debajo de los encabezados */
+  .telefono-heading::after {
+    content: ""; /* El pseudo-elemento no tiene contenido */
+    position: absolute;
+    bottom: 0; /* Coloca la línea al fondo */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho del texto */
+    height: 2px; /* El grosor de la línea */
+    background: linear-gradient(to right, transparent, black, transparent); /* Degradado negro */
+    display: block;
+  }
+  .whatsapp-icon {
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+  }
+  
+  /* Responsivo: Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .telefono-container {
+      width: 100%; /* En pantallas pequeñas, el contenedor ocupará el 100% del ancho */
+    }
+  
+    .telefono-heading, .telefono-whatsapp {
+      font-size: 1.2rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+  }
+  

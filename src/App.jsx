@@ -2,7 +2,7 @@
 
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Navbar from "./navBar/Navbar"; // Ruta correcta para el Navbar
+import Navbar from "./navBar/NavBar"; // Ruta correcta para el Navbar
 import AppRoutes from "./routes/AppsRoutes"; // Importa las rutas desde el archivo Routes.js
 
 const App = () => (

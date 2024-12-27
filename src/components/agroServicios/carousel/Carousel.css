@@ -1,0 +1,21 @@
+.carousel-inner {
+    max-height: 500px; /* Altura máxima del carrusel */
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    object-fit: cover; /* Asegura que las imágenes llenen el contenedor */
+    height: 100%; /* Ajusta la altura de la imagen al contenedor */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente en controles */
+    border-radius: 50%; /* Iconos redondeados */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; /* Ajusta el ancho del área clicable */
+  }
+  

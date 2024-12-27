@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Menu, MenuItem } from "@mui/material";
 import AgricultureIcon from "@mui/icons-material/Agriculture";
 import HomeIcon from "@mui/icons-material/Home";
 import DoneIcon from "@mui/icons-material/Done";
@@ -9,25 +8,15 @@ import ExcavatorIcon from "../components/movSuelo/iconExcavadora/excavador.png";
 import "./NavBar.css";
 
 const Navbar = () => {
-  const [anchorElAgro, setAnchorElAgro] = useState(null);
-  const [anchorElSuelo, setAnchorElSuelo] = useState(null);
-  const [menuOpen, setMenuOpen] = useState(false); // Estado para el menú hamburguesa
-  const navbarRef = useRef(null); // Referencia para la barra de navegación
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navbarRef = useRef(null);
 
-  // Manejadores para mostrar/ocultar los menús desplegables
-  const handleMouseEnterAgro = (event) => setAnchorElAgro(event.currentTarget);
-  const handleMouseLeaveAgro = () => setAnchorElAgro(null);
-  const handleMouseEnterSuelo = (event) => setAnchorElSuelo(event.currentTarget);
-  const handleMouseLeaveSuelo = () => setAnchorElSuelo(null);
-
-  // Alternar el estado del menú hamburguesa
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
-  // Cerrar el menú al hacer clic fuera de la barra de navegación
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-        setMenuOpen(false); // Cerrar el menú si se hace clic fuera de la barra de navegación
+        setMenuOpen(false);
       }
     };
 
@@ -71,74 +60,18 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li
-            className="nav-item"
-            onMouseEnter={handleMouseEnterAgro}
-            onMouseLeave={handleMouseLeaveAgro}
-          >
-            <div className="nav-link d-flex align-items-center">
+          <li className="nav-item">
+            <Link to="/agroservicios" className="nav-link d-flex align-items-center">
               <AgricultureIcon className="me-2" />
               AgroServicios
-            </div>
-            <Menu
-              anchorEl={anchorElAgro}
-              open={Boolean(anchorElAgro)}
-              onClose={handleMouseLeaveAgro}
-            >
-              <MenuItem onClick={handleMouseLeaveAgro}>
-                <Link to="/arreglo-tanques">Arreglo de Tanques</Link>
-              </MenuItem>
-              <MenuItem onClick={handleMouseLeaveAgro}>
-                <Link to="/caminos">Caminos</Link>
-              </MenuItem>
-              <MenuItem onClick={handleMouseLeaveAgro}>
-                <Link to="/desmonte">Desmonte</Link>
-              </MenuItem>
-              <MenuItem onClick={handleMouseLeaveAgro}>
-                <Link to="/feedlot">Feedlot</Link>
-              </MenuItem>
-              <MenuItem onClick={handleMouseLeaveAgro}>
-                <Link to="/limpieza-terreno">Limpieza de Terrenos</Link>
-              </MenuItem>
-              <MenuItem onClick={handleMouseLeaveAgro}>
-                <Link to="/reparacion-tambo">Reparación de Tambo</Link>
-              </MenuItem>
-            </Menu>
+            </Link>
           </li>
 
-          <li
-            className="nav-item"
-            onMouseEnter={handleMouseEnterSuelo}
-            onMouseLeave={handleMouseLeaveSuelo}
-          >
-            <div className="nav-link d-flex align-items-center">
+          <li className="nav-item">
+            <Link to="/movimientos-de-suelo" className="nav-link d-flex align-items-center">
               <img src={ExcavatorIcon} alt="Excavadora" className="me-2" />
               Movimientos de Suelo
-            </div>
-            <Menu
-              anchorEl={anchorElSuelo}
-              open={Boolean(anchorElSuelo)}
-              onClose={handleMouseLeaveSuelo}
-            >
-              <MenuItem onClick={handleMouseLeaveSuelo}>
-                <Link to="/compactacion">Compactación</Link>
-              </MenuItem>
-              <MenuItem onClick={handleMouseLeaveSuelo}>
-                <Link to="/demoliciones">Demoliciones</Link>
-              </MenuItem>
-              <MenuItem onClick={handleMouseLeaveSuelo}>
-                <Link to="/nivelaciones">Nivelaciones</Link>
-              </MenuItem>
-              <MenuItem onClick={handleMouseLeaveSuelo}>
-                <Link to="/venta-escombro">Venta de Escombro</Link>
-              </MenuItem>
-              <MenuItem onClick={handleMouseLeaveSuelo}>
-                <Link to="/venta-tierra">Venta de Tierra</Link>
-              </MenuItem>
-              <MenuItem onClick={handleMouseLeaveSuelo}>
-                <Link to="/zanjeo">Zanjeo</Link>
-              </MenuItem>
-            </Menu>
+            </Link>
           </li>
 
           <li className="nav-item">

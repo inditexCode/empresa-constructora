@@ -1,0 +1,73 @@
+/* Estilo general para el contenedor principal */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url('./img/img-f.jpg'); /* Ruta de la imagen */
+  background-position:initial;
+  background-repeat: no-repeat;
+  background-size:cover; /* Asegura que la imagen cubra toda la pantalla */
+}
+
+/* Estilo general para el contenedor */
+.container {
+  width: 100%; /* El contenedor ocupará el 100% del ancho de la página */
+  height: auto;
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 10px 0; /* Añade un poco de espacio en la parte superior e inferior */
+  position: relative; /* Necesario para asegurar que los elementos dentro estén sobre la imagen de fondo */
+  z-index: 2; /* Asegura que los elementos del contenedor se muestren por encima de la imagen de fondo */
+}
+
+h1 {
+  color: white;
+  text-align: center; /* Centra el título */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  position: relative; /* Necesario para el pseudo-elemento */
+  display: inline-block; /* Hace que el h1 no ocupe todo el ancho y se ajuste al texto */
+}
+
+/* Añadir la línea degradada debajo del h1 */
+h1::after {
+  content: ""; /* El pseudo-elemento no tiene contenido */
+  position: absolute;
+  bottom: 0; /* Coloca la línea al fondo del h1 */
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho del h1 */
+  height: 2px; /* El grosor de la línea */
+  background: linear-gradient(to right, transparent, white, transparent); /* Degradado negro */
+  display: block;
+}
+
+/* Estilo de la fila */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas en pantallas pequeñas */
+  justify-content: center; /* Centra los elementos dentro de la fila */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilo de los componentes hijos (en este caso, ArregloTanques) */
+.row > * {
+  width: 100%; /* Cada componente ocupará el 100% del contenedor disponible */
+  max-width: 100%; /* Asegura que no se exceda el 100% del ancho */
+  box-sizing: border-box; /* Asegura que el padding y los bordes no afecten el ancho */
+}
+
+/* Responsivo: Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* En pantallas pequeñas, el contenedor ocupará el 100% del ancho */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Ajusta el tamaño del título para pantallas pequeñas */
+  }
+
+  .row {
+    flex-direction: column; /* En pantallas pequeñas, los elementos de la fila estarán en columna */
+    align-items: center; /* Centra los elementos en columnas */
+  }
+}
