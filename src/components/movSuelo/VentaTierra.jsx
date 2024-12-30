@@ -1,5 +1,5 @@
 import React from "react";
-import img3 from "./img/4.jpg";
+import img5 from "./img/5.png";
 import "./VentaTierra.css"; // Archivo CSS específico para estilos de la tarjeta
 
 const VentaTierra = () => {
@@ -9,7 +9,7 @@ const VentaTierra = () => {
       <div className="VentaTierra-card-container">
         <div className="VentaTierra-card-row">
           <div className="VentaTierra-card-image">
-            <img src={img3} alt="Tanque" />
+            <img src={img5} alt="Tanque" />
           </div>
           <div className="VentaTierra-card-content">
             <h5 className="VentaTierra-card-title">VentaTierra</h5>

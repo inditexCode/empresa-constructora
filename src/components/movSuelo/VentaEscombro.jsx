@@ -1,5 +1,5 @@
 import React from "react";
-import img3 from "./img/3.png";
+import img4 from "./img/4.jpg";
 import "./VentaEscombro.css"; // Archivo CSS específico para estilos de la tarjeta
 
 const VentaEscombro = () => {
@@ -9,7 +9,7 @@ const VentaEscombro = () => {
       <div className="VentaEscombro-card-container">
         <div className="VentaEscombro-card-row">
           <div className="VentaEscombro-card-image">
-            <img src={img3} alt="Tanque" />
+            <img src={img4} alt="Tanque" />
           </div>
           <div className="VentaEscombro-card-content">
             <h5 className="VentaEscombro-card-title">VentaEscombro</h5>

@@ -1,10 +1,18 @@
+// Componente Inicio
+
+import Telefono from "../telefono/Telefono";
+import Header from "./Header/Header";
+import Main from "./main/Main";
 
 const Inicio = () => {
-
     return (
-        <>
-        <h1>Inicio</h1>
-        </>
-    )
-}
-export default Inicio
+      <div>
+        <Telefono/>
+        <Header/>
+        <Main/>
+      </div>
+    );
+  };
+  
+  export default Inicio;
+  

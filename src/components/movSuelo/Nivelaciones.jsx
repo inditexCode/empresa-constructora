@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "./img/1.jpg";
+import img3 from "./img/3.png";
 import "./Nivelaciones.css"; // Archivo CSS específico para estilos de la tarjeta
 
 const Nivelaciones = () => {
@@ -9,7 +9,7 @@ const Nivelaciones = () => {
       <div className="Nivelaciones-card-container">
         <div className="Nivelaciones-card-row">
           <div className="Nivelaciones-card-image">
-            <img src={img1} alt="Tanque" />
+            <img src={img3} alt="Tanque" />
           </div>
           <div className="Nivelaciones-card-content">
             <h5 className="Nivelaciones-card-title">Nivelaciones</h5>

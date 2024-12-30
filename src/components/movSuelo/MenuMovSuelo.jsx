@@ -13,20 +13,20 @@ const MenuMovSuelo = () => {
     return (
         <>
         <div className="contenedo-p">
-        <Carousel />
         <Telefono/>
+        <Carousel />
         <div className="container">
-        <h1>Compactacion</h1>
+        <h1>COMPACTACIÓN</h1>
             <Compactacion />
-            <h1>Demoliciones</h1>
+            <h1>DEMOLICIONES</h1>
             <Demoliciones/>
-            <h1>Nivelaciones</h1>
+            <h1>NIVELACIONES</h1>
             <Nivelaciones/>
-            <h1>Venta de Escombro</h1>
+            <h1>VENTA DE ESCOMBROS</h1>
             <VentaEscombro/>
-            <h1>Venta de Tierra</h1>
+            <h1>VENTA DE TIERRA</h1>
             <VentaTierra/>
-            <h1>Zanjeo</h1>
+            <h1>ZANJEO</h1>
             <Zanjeo/>
         </div>
         </div>

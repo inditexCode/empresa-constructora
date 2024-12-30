@@ -1,19 +1,19 @@
 import React from "react";
-import img1 from "./img/1.jpg";
+import img3 from "./img/3.png";
 import "./Compactacion.css"; // Archivo CSS específico para estilos de la tarjeta
 
 const Compactacion = () => {
   return (
     <>
       {/* Tarjeta */}
-      <div className="compactacion-card-container">
-        <div className="compactacion-card-row">
-          <div className="compactacion-card-image">
-            <img src={img1} alt="Tanque" />
+      <div className="Compactacion-card-container">
+        <div className="Compactacion-card-row">
+          <div className="Compactacion-card-image">
+            <img src={img3} alt="Tanque" />
           </div>
-          <div className="compactacion-card-content">
-            <h5 className="compactacion-card-title">Compactacion</h5>
-            <p className="compactacion-card-text">
+          <div className="Compactacion-card-content">
+            <h5 className="Compactacion-card-title">COMPACTACIÓN</h5>
+            <p className="Compactacion-card-text">
               "El mantenimiento y la reparación de tanques son fundamentales
               para garantizar su funcionamiento óptimo y prolongar su vida
               útil. Nuestro equipo se especializa en la inspección y

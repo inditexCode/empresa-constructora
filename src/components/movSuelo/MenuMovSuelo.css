@@ -1,5 +1,64 @@
 .contenedo-p{
-    background-color: gold;
+  background-color: #fafafa;
     box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 
-}
+}/* Estilo para el contenedor principal */
+
+  
+  .container {
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos de los encabezados */
+  h1 {
+    text-align: center;
+    font-size: 2rem; /* Tamaño de fuente inicial */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los componentes dentro del contenedor */
+  .container > div {
+    margin-bottom: 40px;
+  }
+  
+  /* Media query para pantallas medianas (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .contenedo-p {
+      padding: 15px; /* Reducir padding en pantallas medianas */
+    }
+  
+    .container {
+      padding: 15px; /* Reducir padding en pantallas medianas */
+    }
+  
+    h1 {
+      font-size: 1.5rem; /* Reducir tamaño de fuente del encabezado */
+      margin-bottom: 15px;
+    }
+  
+    .container > div {
+      margin-bottom: 30px; /* Reducir margen entre los componentes */
+    }
+  }
+  
+  /* Media query para pantallas pequeñas (max-width: 768px) */
+  @media (max-width: 768px) {
+    .contenedo-p {
+      padding: 10px; /* Reducir padding en pantallas pequeñas */
+    }
+  
+    .container {
+      padding: 10px; /* Reducir padding en pantallas pequeñas */
+    }
+  
+    h1 {
+      font-size: 1.2rem; /* Reducir tamaño de fuente del encabezado */
+      margin-bottom: 10px;
+    }
+  
+    .container > div {
+      margin-bottom: 20px; /* Reducir margen entre los componentes */
+    }
+  }
+  

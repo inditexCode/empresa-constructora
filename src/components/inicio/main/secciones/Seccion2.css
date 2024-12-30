@@ -1,0 +1,58 @@
+.seccion2-container {
+  text-align: center;
+  margin: 100px 20px;
+  padding: 50px 20px;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  box-shadow: 0  0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+  border-radius: 10px; /* Opcional: bordes redondeados para un acabado más limpio */
+  background-color: #ffffff; /* Asegúrate de tener un fondo blanco o claro */
+}
+
+.seccion2-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
+  margin: auto; /* Centra el contenido */
+}
+
+.icon-item {
+  text-align: center;
+  flex: 1; /* Distribuye uniformemente los íconos */
+  padding: 10px;
+}
+
+.icon-image {
+  width: 80px; /* Tamaño reducido de los íconos */
+  height: 80px;
+  object-fit: contain; /* Mantén las proporciones de la imagen */
+  margin-bottom: 10px;
+}
+
+.icon-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .icon-row {
+    flex-direction: column; /* Cambia a disposición vertical */
+    gap: 20px;
+  }
+
+  .icon-item {
+    margin-bottom: 10px;
+  }
+
+  .icon-image {
+    width: 40px; /* Reduce aún más el tamaño en pantallas pequeñas */
+    height: 40px;
+  }
+}

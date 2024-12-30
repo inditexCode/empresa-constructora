@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container-fluid">
         <h2>
           <Link to="/" className="company-link">
-            Canani Sánchez
+            CANANI SÁNCHEZ
           </Link>
         </h2>
 
@@ -56,35 +56,35 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/" className="nav-link d-flex align-items-center">
               <HomeIcon className="me-2" />
-              Inicio
+              INICIO
             </Link>
           </li>
 
           <li className="nav-item">
             <Link to="/agroservicios" className="nav-link d-flex align-items-center">
               <AgricultureIcon className="me-2" />
-              AgroServicios
+              AGROSERVICIOS
             </Link>
           </li>
 
           <li className="nav-item">
             <Link to="/movimientos-de-suelo" className="nav-link d-flex align-items-center">
               <img src={ExcavatorIcon} alt="Excavadora" className="me-2" />
-              Movimientos de Suelo
+              MOVIMIENTO DE SUELO
             </Link>
           </li>
 
           <li className="nav-item">
             <Link to="/trabajos-realizados" className="nav-link d-flex align-items-center">
               <DoneIcon className="me-2" />
-              Trabajos Realizados
+              TRABAJOS REALIZADOS
             </Link>
           </li>
 
           <li className="nav-item">
             <Link to="/contacto" className="nav-link d-flex align-items-center">
               <PhoneIcon className="me-2" />
-              Contacto
+              CONTACTOS
             </Link>
           </li>
         </ul>

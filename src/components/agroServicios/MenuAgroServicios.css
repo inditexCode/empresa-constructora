@@ -3,12 +3,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: url('./img/img-f.jpg'); /* Ruta de la imagen */
-  background-position:initial;
-  background-repeat: no-repeat;
-  background-size:cover; /* Asegura que la imagen cubra toda la pantalla */
 }
-
+.contenedor-principal {
+  background-color: rgba(251, 251, 251, 0.8); /* Verde con 80% de opacidad */
+}
 /* Estilo general para el contenedor */
 .container {
   width: 100%; /* El contenedor ocupará el 100% del ancho de la página */
@@ -20,7 +18,7 @@ body {
 }
 
 h1 {
-  color: white;
+  color: rgba(38, 38, 37, 0.904);
   text-align: center; /* Centra el título */
   font-size: 2rem;
   margin-bottom: 20px;
@@ -37,7 +35,7 @@ h1::after {
   left: 0;
   width: 100%; /* Ocupa todo el ancho del h1 */
   height: 2px; /* El grosor de la línea */
-  background: linear-gradient(to right, transparent, white, transparent); /* Degradado negro */
+  background: linear-gradient(to right, transparent, black, transparent); /* Degradado negro */
   display: block;
 }
 

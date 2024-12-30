@@ -1,55 +1,157 @@
 /* Estilos para el contenedor principal */
 .contactos-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Añadir algo de espacio alrededor */
+}
 
-  
-  /* Estilos para la imagen de fondo */
-  .imagen-contacto {
-    width: 100%;
-    height: auto;
-    max-height: 50vh; /* Máximo 30% de la altura de la ventana */
-    object-fit: cover; /* Ajustar la imagen sin distorsionarla */
-    margin-bottom: 50px; /* Espacio de 50px desde la imagen hasta el formulario */
-  }
-  .conteiner-contacto p{
-    padding-top: 25px;
+/* Estilos para la imagen de fondo */
+.imagen-contacto {
+  width: 100%;
+  height: auto;
+  max-height: 50vh; /* Máximo 50% de la altura de la ventana */
+  object-fit: cover; /* Ajustar la imagen sin distorsionarla */
+  margin-bottom: 50px; /* Espacio de 50px desde la imagen hasta el formulario */
+}
+
+/* Estilos generales para los párrafos y títulos */
+.conteiner-contacto p {
+  padding-top: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: brown;
+  font-size: 1.1rem;
+}
+
+.conteiner-contacto h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Estilos para el contenedor del formulario */
+.formulario {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para el contenedor del formulario con fondo */
+.form-container {
+  padding: 40px 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgb(247, 248, 248);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los inputs y campos de texto */
+.mb-3 input[type="text"],
+.mb-3 input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.form-check {
+  padding-top: 20px;
+}
+
+.form-3 textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  resize: none; /* Evita que el usuario pueda redimensionar el textarea */
+  font-size: 1rem;
+}
+
+/* Estilos para el botón del formulario */
+.button-form {
+  background-color: rgba(210, 50, 10, 1);
+  color: white;
+  border: 1px solid rgba(210, 50, 10, 1);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-form:hover {
+  background-color: transparent;
+  color: rgba(210, 50, 10, 1);
+  border: 1px solid rgba(210, 50, 10, 1);
+}
+
+/* Media Query para pantallas medianas (como tabletas) */
+@media (max-width: 768px) {
+  .imagen-contacto {
+    width: 100%; /* Ajuste para pantallas medianas */
+    max-height: 40vh; /* Ajuste de altura en pantallas medianas */
   }
-  .conteiner-contacto h4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    }
-  
-  /* Estilos para el contenedor del formulario */
+
+  .conteiner-contacto h4 {
+    font-size: 1.3rem; /* Reducir tamaño de fuente en pantallas medianas */
+  }
+
   .formulario {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%; /* Ajuste para pantallas medianas */
+    padding: 20px; /* Asegurarse de que el formulario no se pegue a los bordes */
   }
-  
-  @media (max-width: 768px) {
-    .imagen-contacto {
-      width: 100%; /* Ajuste para pantallas pequeñas */
-    }
-  
-    .formulario {
-      width: 100%; /* Ajuste para pantallas pequeñas */
-      padding: 10px; /* Espaciado menor en pantallas pequeñas */
-    }
+
+  .form-container {
+    width: 90%; /* Ajuste para pantallas medianas */
+    padding: 20px;
   }
-  
-  
-  
-  
+
+  .button-form {
+    font-size: 14px; /* Ajustar tamaño del botón en pantallas medianas */
+  }
+}
+
+/* Media Query para pantallas pequeñas (como móviles) */
+@media (max-width: 576px) {
+  .imagen-contacto {
+    width: 100%; /* Ajuste completo para pantallas pequeñas */
+    max-height: 35vh; /* Ajustar altura aún más en móviles */
+  }
+
+  .conteiner-contacto h4 {
+    font-size: 1rem; /* Reducir más el tamaño de fuente en pantallas pequeñas */
+    margin-left: 10px;
+  }
+
+  .conteiner-contacto p {
+    font-size: 1rem; /* Reducir el tamaño del texto en pantallas pequeñas */
+  }
+
+  .form-container {
+    width: 100%; /* Ajuste para pantallas pequeñas */
+    padding: 10px;
+  }
+
+  .mb-3 input[type="text"],
+  .mb-3 input[type="email"],
+  .form-3 textarea {
+    font-size: 0.9rem; /* Ajustar tamaño de los campos de entrada */
+    padding: 8px; /* Reducir el tamaño del padding en móviles */
+  }
+
+  .button-form {
+    font-size: 14px; /* Ajuste del tamaño de fuente del botón */
+    padding: 8px 16px; /* Reducir tamaño del botón en pantallas pequeñas */
+  }
+}

@@ -1,0 +1,37 @@
+.title {
+    display: flex; /* Usamos Flexbox para alinear los elementos */
+    flex-direction: column; /* Asegura que los títulos se apilen uno encima del otro */
+    align-items: center; /* Centra los títulos horizontalmente */
+    justify-content: center; /* Centra los títulos verticalmente dentro del contenedor */
+    margin-top: 60px; /* Añade un padding de 20px arriba y abajo */
+    padding-top: 30px;
+    text-align: center; /* Alinea el texto al centro */
+  }
+  .title h4{
+    font-weight: 150;
+  }
+  .title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .mapa{
+    margin: 40px 40px;
+    padding: 30px 30px;
+    background-color: black;
+  }
+  .title-mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px 0;
+    font-size: 1.8rem;
+  }
+  @media (max-width: 760px){
+    .title h2{
+      font-size: 2.5rem;
+    }
+    .main-p{
+      margin: 0 10px;
+    }
+  }

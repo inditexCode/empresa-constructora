@@ -1,16 +1,19 @@
 import React from "react";
-import img2 from "./img/2.png";
+import img3 from "./img/3.png";
 import "./Demoliciones.css"; // Archivo CSS específico para estilos de la tarjeta
 
 const Demoliciones = () => {
   return (
     <>
       {/* Tarjeta */}
-      <div className="demoliciones-card-container">
-        <div className="demoliciones-card-row">
-          <div className="demoliciones-card-content">
-            <h5 className="demoliciones-card-title">Demoliciones</h5>
-            <p className="demoliciones-card-text">
+      <div className="Demoliciones-card-container">
+        <div className="Demoliciones-card-row">
+          <div className="Demoliciones-card-image">
+            <img src={img3} alt="Tanque" />
+          </div>
+          <div className="Demoliciones-card-content">
+            <h5 className="Demoliciones-card-title">Demoliciones</h5>
+            <p className="Demoliciones-card-text">
               "El mantenimiento y la reparación de tanques son fundamentales
               para garantizar su funcionamiento óptimo y prolongar su vida
               útil. Nuestro equipo se especializa en la inspección y
@@ -23,9 +26,6 @@ const Demoliciones = () => {
               confiables. Confía en nosotros para mantener tus tanques en
               perfectas condiciones."
             </p>
-          </div>
-          <div className="demoliciones-card-image">
-            <img src={img2} alt="Tanque" />
           </div>
         </div>
       </div>
