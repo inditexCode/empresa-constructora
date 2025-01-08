@@ -6,6 +6,7 @@ import Seccion2 from "./secciones/Seccion2";
 import Seccion3 from "./secciones/Seccion3";
 import Mapa from "../../mapa/Mapa";
 import Telefono from "../../telefono/Telefono";
+import Seccion4 from "./secciones/Seccion4";
 
 
 const Main = () => {
@@ -24,6 +25,7 @@ const Main = () => {
           <h2 className="title-mapa">PÓDES ENCONTRARNOS</h2>
         <Mapa/>
         </div>
+        <Seccion4/>
       </div>
       </>
 

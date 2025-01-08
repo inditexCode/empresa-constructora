@@ -1,0 +1,32 @@
+/* Estilo para el ícono personalizado que usa Material UI */
+.custom-div-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red; /* Color del ícono */
+    font-size: 24px; /* Tamaño del ícono */
+  }
+  
+  /* Estilo para los íconos del mapa (tamaño específico) */
+  .leaflet-marker-icon {
+    width: 24px !important; /* Tamaño ajustado para los íconos */
+    height: 24px !important;
+  }
+  
+  /* Estilo del tooltip */
+  .leaflet-tooltip {
+    padding: 4px !important; /* Espaciado en el tooltip */
+    max-width: 150px; /* Ancho máximo del tooltip */
+    word-wrap: break-word; /* Asegura que el texto no se desborde */
+    font-size: 12px; /* Tamaño de texto ajustado */
+  }
+  /* Estilo del tooltip */
+.custom-tooltip {
+    padding: 8px !important; /* Espaciado en el tooltip */
+    max-width: 200px; /* Ancho máximo del tooltip */
+    word-wrap: break-word; /* Asegura que el texto no se desborde */
+    font-size: 14px; /* Tamaño de texto ajustado */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  

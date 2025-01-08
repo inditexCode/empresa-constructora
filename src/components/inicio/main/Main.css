@@ -1,3 +1,7 @@
+.contenedor-main{
+  background-color: white;
+}
+
 .title {
     display: flex; /* Usamos Flexbox para alinear los elementos */
     flex-direction: column; /* Asegura que los títulos se apilen uno encima del otro */
@@ -6,17 +10,22 @@
     margin-top: 60px; /* Añade un padding de 20px arriba y abajo */
     padding-top: 30px;
     text-align: center; /* Alinea el texto al centro */
+
   }
   .title h4{
     font-weight: 150;
+    font-size: 1.4rem;
   }
   .title h2 {
     font-size: 3rem;
     font-weight: bold;
   }
+  .main-p{
+    font-size: 1.4rem;
+
+  }
   .mapa{
     margin: 40px 40px;
-    padding: 30px 30px;
     background-color: black;
   }
   .title-mapa{
@@ -28,10 +37,28 @@
     font-size: 1.8rem;
   }
   @media (max-width: 760px){
+    .title-mapa{
+      font-size: 1.2rem;
+    }
     .title h2{
       font-size: 2.5rem;
     }
     .main-p{
       margin: 0 10px;
+    }
+  }
+  @media (max-width: 480px){
+    .title-mapa{
+      font-size: 1rem;
+    }
+    .title h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .main-p{
+    font-size: 0.9rem;
+    }
+    .title h4{
+      font-size: 1.3rem;
     }
   }

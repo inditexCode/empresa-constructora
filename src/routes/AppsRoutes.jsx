@@ -16,7 +16,6 @@ import VentaEscombro from "../components/movSuelo/VentaEscombro";
 import VentaTierra from "../components/movSuelo/VentaTierra";
 import Zanjeo from "../components/movSuelo/Zanjeo";
 import TrabajosRealizados from "../components/proyectos/TrabajosRealizados";
-import HistoriaEmpresa from "../components/sobreNosotros/HistoriaEmpresa";
 import MenuMovSuelo from "../components/movSuelo/MenuMovSuelo"; // Importar MenuMovSuelo
 
 const AppRoutes = () => {
@@ -37,7 +36,6 @@ const AppRoutes = () => {
       <Route path="/zanjeo" element={<Zanjeo />} />
       <Route path="/trabajos-realizados" element={<TrabajosRealizados />} />
       <Route path="/contacto" element={<Contacto />} />
-      <Route path="/historia-empresa" element={<HistoriaEmpresa />} />
       <Route path="/movimientos-de-suelo" element={<MenuMovSuelo />} /> {/* Ruta para MenuMovSuelo */}
     </Routes>
   );

@@ -1,0 +1,158 @@
+/* Estilos generales para pantallas grandes */
+.contenedor-seccion4 {
+    padding: 100px 20px; /* Padding arriba y abajo */
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1800px;
+}
+
+.modulo_flex {
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+}
+
+.modulo_flex .modulo_titulo {
+    width: 26%; /* Mantiene el ancho en pantallas grandes */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modulo_flex .modulo_titulo h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #404041;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.modulo_flex .modulo_separador  {
+    width: 0.1%; /* Ajuste en pantallas pequeñas */
+    max-width: 8.6458%; /* Máximo ancho en pantallas más grandes */
+    background-color: #cccccc; /* Ejemplo de color de fondo */
+    height: auto; /* Asegura que el separador se ajuste al contenido */
+}
+
+.modulo_flex .modulo_texto {
+    width: 52.39583%;
+    position: relative;
+}
+.modulo_flex .modulo_texto .soporte_texto p {
+    font-size: 1rem; /* Usa una unidad relativa para el tamaño de fuente */
+    line-height: 1.6; /* Mejora la legibilidad */
+    color: #404041;
+    margin-bottom: 20px;
+}
+.soporte_texto ul {
+    color: rgb(58, 56, 56);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.modulo_flex .modulo_texto .soporte_texto {
+    position: relative;
+    padding: 20px;
+}
+
+.modulo_flex .modulo_foto {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modulo_flex .modulo_foto img {
+    width: auto;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Media Queries para mantener el diseño entre 1788px y 768px */
+@media (max-width: 1788px) and (min-width: 994px) {
+    .modulo_flex {
+        flex-wrap: nowrap; /* Mantiene los elementos en línea */
+        flex-direction: row; /* Asegura que los elementos no cambien de posición */
+        justify-content: space-between; /* Mantiene el espaciado entre los elementos */
+    }
+
+    .modulo_flex .modulo_titulo,
+    .modulo_flex .modulo_separador,
+    .modulo_flex .modulo_texto,
+    .modulo_flex .modulo_foto {
+        width: auto; /* Asegura que los elementos mantengan su ancho relativo */
+    }
+
+    .modulo_flex .modulo_foto img {
+        height: auto; /* Permite que la imagen se redimensione proporcionalmente */
+    }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 994px) {
+    .modulo_flex {
+        flex-direction: column;
+        align-items: center;
+    }
+.soporte_texto ul {
+    padding: 15px 20px;
+    color: rgb(58, 56, 56);
+    font-weight: bold;
+    font-size: 1rem;
+}
+    .modulo_flex .modulo_titulo {
+        width: 100%;
+    }
+
+    .modulo_flex .modulo_separador {
+        display: none; /* Oculta el separador en pantallas pequeñas */
+    }
+
+    .modulo_flex .modulo_texto {
+        width: 100%;
+    }
+
+    .modulo_flex .modulo_texto .soporte_texto {
+        padding: 10px; /* Reduce el padding para pantallas pequeñas */
+    }
+
+    .modulo_flex .modulo_foto {
+        width: 100%;
+    }
+
+    .modulo_flex .modulo_foto img {
+        width: 100%;
+        max-height: 300px; /* Limita la altura de la imagen para pantallas pequeñas */
+        object-fit: cover; /* Ajusta la imagen al contenedor */
+    }
+}
+
+/* Media Queries para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .contenedor-seccion4 {
+        padding: 60px 10px; /* Reduce el padding en pantallas muy pequeñas */
+    }
+
+    .modulo_flex .modulo_titulo h2 {
+        font-size: 1.5rem; /* Reduce el tamaño de fuente del título */
+    }
+
+    .modulo_flex .modulo_texto .soporte_texto p {
+        font-size: 0.9rem; /* Ajusta el tamaño de fuente del texto */
+    }
+
+    .modulo_flex .modulo_foto img {
+        max-height: 200px; /* Reduce aún más la altura de la imagen */
+    }
+}

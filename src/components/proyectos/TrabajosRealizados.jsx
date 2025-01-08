@@ -1,9 +1,11 @@
+import Trabajo1 from "./Trabajo1"
 
 const TrabajosRealizados = () => {
 
     return (
         <>
-        <h1>Trabajos Realizados</h1>
+       
+        <Trabajo1/>
         </>
     )
 }

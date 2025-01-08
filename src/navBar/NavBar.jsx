@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import AgricultureIcon from "@mui/icons-material/Agriculture";
 import HomeIcon from "@mui/icons-material/Home";
 import DoneIcon from "@mui/icons-material/Done";
 import PhoneIcon from "@mui/icons-material/Phone";
-import ExcavatorIcon from "../components/movSuelo/iconExcavadora/excavador.png";
+
+// Importa la imagen de tu tractor (tractor1.png) solo para el ícono de Agroservicios
+import TractorIcon from "../components/inicio/main/secciones/img/tractor-campo.png"; // Asegúrate de que la ruta sea correcta
+
+import ExcavatorIcon from "../components/movSuelo/iconExcavadora/exc.png"; // No cambiar el ícono de Excavadora
 import "./NavBar.css";
 
 const Navbar = () => {
@@ -56,35 +59,37 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/" className="nav-link d-flex align-items-center">
               <HomeIcon className="me-2" />
-              INICIO
+              <h3>INICIO</h3>
             </Link>
           </li>
 
           <li className="nav-item">
             <Link to="/agroservicios" className="nav-link d-flex align-items-center">
-              <AgricultureIcon className="me-2" />
-              AGROSERVICIOS
+              {/* Usando la imagen tractor1.png para Agroservicios */}
+              <img src={TractorIcon} alt="Agroservicios" className="me-2" />
+              <h3>AGROSERVICIOS</h3>
             </Link>
           </li>
 
           <li className="nav-item">
             <Link to="/movimientos-de-suelo" className="nav-link d-flex align-items-center">
+              {/* Manteniendo el ícono de Excavadora para Movimiento de Suelo */}
               <img src={ExcavatorIcon} alt="Excavadora" className="me-2" />
-              MOVIMIENTO DE SUELO
+              <h3>MOVIMIENTO DE SUELO</h3>
             </Link>
           </li>
 
           <li className="nav-item">
             <Link to="/trabajos-realizados" className="nav-link d-flex align-items-center">
               <DoneIcon className="me-2" />
-              TRABAJOS REALIZADOS
+              <h3>TRABAJOS REALIZADOS</h3>
             </Link>
           </li>
 
           <li className="nav-item">
             <Link to="/contacto" className="nav-link d-flex align-items-center">
               <PhoneIcon className="me-2" />
-              CONTACTOS
+              <h3>CONTACTOS</h3>
             </Link>
           </li>
         </ul>

@@ -3,6 +3,7 @@ import './Contacto.css'
 import FormContacto from './FormContactos'
 import imagen from './img/campo.jpg'
 import Telefono from '../telefono/Telefono'
+import Footer from '../inicio/footer/Footer'
 
 const Contactos = () => {
   return (
@@ -16,6 +17,7 @@ const Contactos = () => {
          <FormContacto/>
        </div>
     </div>
+    <Footer/>
 
     </>
     

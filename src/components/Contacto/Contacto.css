@@ -1,4 +1,7 @@
 /* Estilos para el contenedor principal */
+.formulario{
+  padding-bottom: 80px ;
+}
 .contactos-container {
   display: flex;
   flex-direction: column;

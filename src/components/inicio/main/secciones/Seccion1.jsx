@@ -1,14 +1,14 @@
 import React from "react";
 import Fila from "./Fila"; // Importa el componente Fila
 import imagen from "./img/s.jpg";
-import img1 from "./img/desmonte.png";
-import img2 from "./img/retroexcavadora.png";
-import img3 from "./img/retroexcavadora.png";
-import img4 from "./img/desmonte.png";
-import img5 from "./img/camion-tierra.png";
-import img6 from "./img/retroexcavadora.png";
-import img7 from "./img/excavadora.png";
-import img8 from "./img/excavadora.png";
+import img1 from "./img/desmonte-2.png";
+import img2 from "./img/retro.png";
+import img3 from "./img/retro.png";
+import img4 from "./img/desmonte-2.png";
+import img5 from "./img/maq-rodillo-3.png";
+import img6 from "./img/maq-grande.png";
+import img7 from "./img/retro-tierra.png";
+import img8 from "./img/exc.png";
 
 import "./Seccion.css"; // Asegúrate de importar los estilos
 

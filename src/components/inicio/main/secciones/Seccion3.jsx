@@ -35,7 +35,6 @@ const Seccion3 = () => {
     <div className="seccion3-container">
       {/* Columna Izquierda */}
       <div className="menu-izquierda">
-        <h4>Quienes somos</h4>
         <h2>TRAYECTORIA AL SERVICIO DEL CAMPO Y DE LA CONSTRUCCIÓN</h2>
         <p>
           Una Empresa que se destaca por su cumplimiento, calidad y costos.
@@ -49,7 +48,7 @@ const Seccion3 = () => {
         <div className="icon-grid">
   {iconItems.map((item, index) => (
     <div className="icon-item" key={index}>
-      <item.Icon style={{ fontSize: "80px", color: "gold" }} />
+      <item.Icon style={{ fontSize: "60px", color: "gold" }} />
       <h4>{item.title}</h4>
     </div>
   ))}

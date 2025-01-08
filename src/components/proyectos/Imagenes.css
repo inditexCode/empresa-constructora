@@ -1,0 +1,54 @@
+/* Estilos generales para la galería */
+.contenedor_imaganes{
+    background-color: rgb(66, 66, 66);
+    padding: 20px;
+}
+.titulo_imagenes{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 ;
+    font-size: 1.8rem;
+
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 0; /* Sin separación entre las imágenes */
+    grid-auto-rows: 200px; /* Fija una altura para las filas */
+    width: 100%;
+    margin: 20px auto;
+    max-width: 1200px; /* Limita el tamaño máximo de la galería */
+  }
+  
+  .imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que las imágenes se ajusten sin deformarse */
+  }
+  
+  /* Media Queries para pantallas más pequeñas */
+  @media (max-width: 1024px) {
+    .galeria {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+      grid-auto-rows: 180px; /* Ajusta la altura de las filas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .galeria {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
+      grid-auto-rows: 150px; /* Ajusta la altura de las filas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .galeria {
+      grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+      grid-auto-rows: 120px; /* Ajusta la altura de las filas */
+    }
+  }
+  

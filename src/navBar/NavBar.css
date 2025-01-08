@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 35px 20px;
-  background-color: #fdfcfc;
+  background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -14,9 +14,8 @@
   text-decoration: none;
 }
 
-.company-link:hover {
-  color: #f8d407;
-}
+
+
 
 .navbar ul {
   list-style-type: none;
@@ -43,20 +42,33 @@
   padding: 10px 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   transition: color 0.3s, background-color 0.3s ease;
 }
-
-.navbar ul li a:hover {
+.navbar ul li h3 {
+  margin: 0;  /* Eliminar márgenes que puedan afectar la alineación */
+  padding: 0; /* Eliminar cualquier padding extra */
+  line-height: 1; /* Aseguramos que el texto no esté demasiado alto */
+  display: inline-block; /* Deja que el título esté en línea con el icono */
+}
+.navbar ul li h3:hover {
   border-radius: 5px;
   color: #f8d407;
+
 }
 
 .navbar ul li a svg,
 .navbar ul li a img {
-  transition: color 0.3s ease;
-  color: inherit;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Añadimos una transición suave */
+  color: inherit; /* Los iconos heredan el color del texto */
 }
 
+/* Al hacer hover en los iconos o las imágenes (como la Excavadora) */
+.navbar ul li a:hover svg,
+.navbar ul li a:hover img {
+  opacity: 1; /* No cambia la opacidad de los iconos */
+  transform: none; /* No aumenta el tamaño de los iconos */
+}
 .navbar img,
 .navbar svg {
   width: 45px;
@@ -101,5 +113,11 @@
 
   .hamburger {
     display: flex;
+  }
+  .company-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #010101;
+    text-decoration: none;
   }
 }

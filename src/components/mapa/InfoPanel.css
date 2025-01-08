@@ -1,0 +1,87 @@
+/* Panel de información dentro del mapa */
+.info-panel {
+    position: absolute; /* Asegura que el panel se posicione sobre el mapa */
+    top: 30%; /* Centrado verticalmente */
+    left: 0;  /* Alineado a la izquierda */
+    transform: translateY(-50%); /* Centrado perfecto en el eje Y */
+    background-color: white; /* Fondo semi-transparente */
+    padding: 15px ;
+    z-index: 999; /* Asegura que el panel quede por encima del mapa */
+    width: 230px; /* Establece un ancho fijo para el panel */
+    max-width: 100%; /* Asegura que el panel no se desborde */
+}
+
+/* Contenedor de título e imagen */
+.contenedor_Cartel {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos al principio */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilo de la imagen (icono) */
+.contenedor_Cartel img {
+    width: 24px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo de los textos en el panel */
+.info-panel h4 {
+    margin: 0;
+    font-size: 17px;
+    color: rgb(70, 69, 69);
+    font-weight: bold;
+}
+
+.info-panel p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: rgb(90, 89, 89);
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 760px) {
+    /* Ajustar el tamaño del panel */
+    .info-panel {
+        width: 180px; /* Reducir el ancho en pantallas más pequeñas */
+        padding: 10px; /* Reducir el padding */
+    }
+
+    /* Ajustar el tamaño del título */
+    .info-panel h4 {
+        font-size: 10px; /* Reducir el tamaño del título */
+    }
+
+    /* Ajustar el tamaño de la imagen */
+    .contenedor_Cartel img {
+        width: 20px; /* Reducir el tamaño de la imagen */
+    }
+
+    /* Ajustar el tamaño del texto */
+    .info-panel p {
+        font-size: 10px; /* Reducir el tamaño del texto */
+    }
+}
+
+/* Media queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    /* Ajustar el tamaño del panel aún más */
+    .info-panel {
+        width: 120px; /* Reducir aún más el ancho */
+        padding: 8px; /* Reducir padding para pantallas más pequeñas */
+    }
+
+    /* Ajustar el tamaño del título */
+    .info-panel h4 {
+        font-size: 8px; /* Reducir el tamaño del título */
+    }
+
+    /* Ajustar el tamaño de la imagen */
+    .contenedor_Cartel img {
+        width: 14px; /* Reducir aún más el tamaño de la imagen */
+    }
+
+    /* Ajustar el tamaño del texto */
+    .info-panel p {
+        font-size: 8px; /* Reducir aún más el tamaño del texto */
+    }
+}
