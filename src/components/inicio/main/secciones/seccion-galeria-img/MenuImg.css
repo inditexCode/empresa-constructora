@@ -1,0 +1,122 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor de las pestañas */
+.tabs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Centrado de las pestañas */
+.MuiTabs-root {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para los títulos de las pestañas (anular los estilos de MUI) */
+.MuiTab-root {
+    font-size: 1.2rem !important; /* Asegúrate de que el tamaño sea el tuyo */
+    font-weight: bold !important;
+    color: #333 !important; /* Color predeterminado */
+    padding: 10px !important;
+    text-align: center !important; /* Alineación centrada */
+}
+
+/* Estilos para el tab seleccionado */
+.MuiTab-root.Mui-selected {
+    color: #333 !important; /* Cambiar color del tab seleccionado */
+}
+
+/* Estilos específicos para cada pestaña (opcional) */
+.agroservicios {
+    color: #333 !important; /* Verde */
+
+}
+
+.construccion {
+    color: #333 !important; /* Naranja */
+}
+
+.movimientoSuelo {
+    color: #333 !important; /* Naranja */
+}
+/* Estilos para el indicador debajo de las pestañas */
+.MuiTabs-indicator {
+    background-color: #ffb600 !important; /* Cambiar el color de fondo del indicador */
+    border-radius: 2px !important; /* Añadir bordes redondeados */
+}
+
+/* Opcional: Efecto de animación para el indicador */
+.MuiTabs-indicator {
+    transition: all 0.3s ease !important; /* Hacer que el movimiento del indicador sea suave */
+}
+
+/* Contenedor del grid para las imágenes */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 0; /* Sin espacio entre las imágenes */
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+
+/* Estilo de cada imagen dentro del grid */
+.image-grid img {
+
+    width: 100%;
+    height: 100%; /* Altura fija */
+    object-fit: cover; /* Las imágenes se ajustan sin perder proporciones */
+}
+.title-img-menu{
+    background-color: #ffb600;
+}
+.title-img-menu .titulo-img-menu{
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin: 40px 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+/* Responsividad: cambia el diseño del grid según el tamaño de la pantalla */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+    .title-img-menu .titulo-img-menu{
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 300px) and(max-width: 488px) {
+  
+    .agroservicios, .construccion, .movimientoSuelo {
+        font-size: 0.8rem !important;
+        padding-left: 8px !important;
+
+    }
+    .title-img-menu .titulo-img-menu{
+        font-size: 1.2rem;
+    }
+    
+}
+@media (min-width: 300px) and (max-width: 548px) {
+    .agroservicios, .construccion, .movimientoSuelo {
+        font-size: 0.8rem !important;
+        padding-left: 8px !important;
+
+    }
+    .title-img-menu .titulo-img-menu{
+        font-size: 1.2rem;
+    }
+    .image-grid {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+}

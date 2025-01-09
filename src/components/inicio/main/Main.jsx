@@ -7,6 +7,7 @@ import Seccion3 from "./secciones/Seccion3";
 import Mapa from "../../mapa/Mapa";
 import Telefono from "../../telefono/Telefono";
 import Seccion4 from "./secciones/Seccion4";
+import MenuImg from "./secciones/seccion-galeria-img/MenuImg";
 
 
 const Main = () => {
@@ -16,9 +17,9 @@ const Main = () => {
         <div className="title">
         <h4>SOMOS ESPECIALISTAS</h4>
         <h2>NUESTROS SERVICIOS</h2>
-        <p className="main-p">ESTOS SON ALGUNOS DE LOS SERVICIOS QUE BRINDAMOS DE MOVIMIENTO DE SUELO Y AGROSERVICIOS</p>
         </div>
         <Seccion1/>
+        <MenuImg/>
         <Seccion2 />
         <Seccion3/>
         <div className="mapa">

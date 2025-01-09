@@ -1,4 +1,4 @@
-/* Estilos generales para pantallas grandes */
+/* Estilos generales */
 .contenedor-seccion4 {
     padding: 100px 20px; /* Padding arriba y abajo */
     box-sizing: border-box;
@@ -9,7 +9,8 @@
     max-width: 1800px;
 }
 
-.modulo_flex {
+/* Contenedor principal en flexbox */
+.flex-container {
     padding: 18px;
     display: flex;
     flex-direction: row;
@@ -20,15 +21,16 @@
     height: auto;
 }
 
-.modulo_flex .modulo_titulo {
-    width: 26%; /* Mantiene el ancho en pantallas grandes */
+/* Título de la sección */
+.flex-container .section-title {
+    width: 26%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.modulo_flex .modulo_titulo h2 {
+.flex-container .section-title h2 {
     font-size: 2rem;
     font-weight: 700;
     color: #404041;
@@ -36,42 +38,47 @@
     margin: 0 auto;
 }
 
-.modulo_flex .modulo_separador  {
-    width: 0.1%; /* Ajuste en pantallas pequeñas */
-    max-width: 8.6458%; /* Máximo ancho en pantallas más grandes */
-    background-color: #cccccc; /* Ejemplo de color de fondo */
-    height: auto; /* Asegura que el separador se ajuste al contenido */
+/* Separador entre el texto y la foto */
+.flex-container .section-separator  {
+    width: 0.1%;
+    max-width: 8.6458%;
+    background-color: #cccccc;
+    height: auto;
 }
 
-.modulo_flex .modulo_texto {
+/* Texto de la sección */
+.flex-container .section-text {
     width: 52.39583%;
     position: relative;
 }
-.modulo_flex .modulo_texto .soporte_texto p {
-    font-size: 1rem; /* Usa una unidad relativa para el tamaño de fuente */
-    line-height: 1.6; /* Mejora la legibilidad */
+
+.flex-container .section-text .text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
     color: #404041;
     margin-bottom: 20px;
 }
-.soporte_texto ul {
+
+.text-content ul {
     color: rgb(58, 56, 56);
     font-weight: bold;
     font-size: 1rem;
 }
-.modulo_flex .modulo_texto .soporte_texto {
+
+.flex-container .section-text .text-content {
     position: relative;
     padding: 20px;
 }
 
-.modulo_flex .modulo_foto {
+/* Foto de la sección */
+.flex-container .section-photo {
     width: 18%;
     display: flex;
-    align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
-.modulo_flex .modulo_foto img {
+.flex-container .section-photo img {
     width: auto;
     height: 100%;
     display: block;
@@ -79,80 +86,78 @@
     object-position: center;
 }
 
-/* Media Queries para mantener el diseño entre 1788px y 768px */
-@media (max-width: 1788px) and (min-width: 994px) {
-    .modulo_flex {
-        flex-wrap: nowrap; /* Mantiene los elementos en línea */
-        flex-direction: row; /* Asegura que los elementos no cambien de posición */
-        justify-content: space-between; /* Mantiene el espaciado entre los elementos */
+/* Media Queries para pantallas medianas (entre 1788px y 994px) */
+@media (max-width: 1788px) and (min-width: 1132px) {
+    .flex-container {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .modulo_flex .modulo_titulo,
-    .modulo_flex .modulo_separador,
-    .modulo_flex .modulo_texto,
-    .modulo_flex .modulo_foto {
-        width: auto; /* Asegura que los elementos mantengan su ancho relativo */
+    .flex-container .section-title,
+    .flex-container .section-separator
+    {
+        width: auto;
     }
 
-    .modulo_flex .modulo_foto img {
-        height: auto; /* Permite que la imagen se redimensione proporcionalmente */
+    .flex-container .section-photo img {
+        height: auto;
     }
 }
 
-/* Media Queries para Responsividad */
-@media (max-width: 994px) {
-    .modulo_flex {
+/* Media Queries para pantallas más pequeñas (hasta 994px) */
+@media (max-width: 1132px) {
+    .flex-container {
         flex-direction: column;
         align-items: center;
     }
-.soporte_texto ul {
-    padding: 15px 20px;
-    color: rgb(58, 56, 56);
-    font-weight: bold;
-    font-size: 1rem;
+
+    .text-content ul {
+        padding: 15px 20px;
+    }
+
+    .flex-container .section-title {
+        width: 100%;
+    }
+
+    .flex-container .section-separator {
+        display: none;
+    }
+
+    .flex-container .section-text {
+        width: 100%;
+    }
+
+    .flex-container .section-text .text-content {
+        padding: 10px;
+    }
+
+    .flex-container .section-photo {
+        width: 100%;
+    }
+
+    .flex-container .section-photo img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+    }
 }
-    .modulo_flex .modulo_titulo {
-        width: 100%;
-    }
 
-    .modulo_flex .modulo_separador {
-        display: none; /* Oculta el separador en pantallas pequeñas */
-    }
-
-    .modulo_flex .modulo_texto {
-        width: 100%;
-    }
-
-    .modulo_flex .modulo_texto .soporte_texto {
-        padding: 10px; /* Reduce el padding para pantallas pequeñas */
-    }
-
-    .modulo_flex .modulo_foto {
-        width: 100%;
-    }
-
-    .modulo_flex .modulo_foto img {
-        width: 100%;
-        max-height: 300px; /* Limita la altura de la imagen para pantallas pequeñas */
-        object-fit: cover; /* Ajusta la imagen al contenedor */
-    }
-}
-
-/* Media Queries para pantallas aún más pequeñas */
+/* Media Queries para pantallas más pequeñas (hasta 480px) */
 @media (max-width: 480px) {
     .contenedor-seccion4 {
-        padding: 60px 10px; /* Reduce el padding en pantallas muy pequeñas */
+        padding: 60px 10px;
     }
 
-    .modulo_flex .modulo_titulo h2 {
-        font-size: 1.5rem; /* Reduce el tamaño de fuente del título */
+    .flex-container .section-title h2 {
+        font-size: 1.5rem;
     }
 
-    .modulo_flex .modulo_texto .soporte_texto p {
-        font-size: 0.9rem; /* Ajusta el tamaño de fuente del texto */
+    .flex-container .section-text .text-content p {
+        font-size: 0.9rem;
     }
 
-    .modulo_flex .modulo_foto img {
-        max-height: 200px; /* Reduce aún más la altura de la imagen */
+    .flex-container .section-photo img {
+        max-height: 200px;
     }
 }

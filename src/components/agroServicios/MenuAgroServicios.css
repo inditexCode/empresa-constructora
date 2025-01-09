@@ -15,6 +15,18 @@ body {
   padding: 10px 0; /* Añade un poco de espacio en la parte superior e inferior */
   position: relative; /* Necesario para asegurar que los elementos dentro estén sobre la imagen de fondo */
   z-index: 2; /* Asegura que los elementos del contenedor se muestren por encima de la imagen de fondo */
+  max-width: 1400px;
+}
+.estrellas{
+  padding: 20px 10px;
+  color: black;
+}
+
+/* Estilo para los elementos de la lista (li) */
+.LISTA {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 h1 {

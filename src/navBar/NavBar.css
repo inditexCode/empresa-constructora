@@ -1,3 +1,4 @@
+/* Estilos generales para el Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -14,9 +15,6 @@
   text-decoration: none;
 }
 
-
-
-
 .navbar ul {
   list-style-type: none;
   display: flex;
@@ -32,6 +30,10 @@
   align-items: center;
 }
 
+.title_nav {
+  font-size: 0.8rem;
+}
+
 .navbar ul li:hover {
   background-color: #050505a6;
 }
@@ -45,30 +47,19 @@
   justify-content: space-between;
   transition: color 0.3s, background-color 0.3s ease;
 }
+
 .navbar ul li h3 {
-  margin: 0;  /* Eliminar márgenes que puedan afectar la alineación */
-  padding: 0; /* Eliminar cualquier padding extra */
-  line-height: 1; /* Aseguramos que el texto no esté demasiado alto */
-  display: inline-block; /* Deja que el título esté en línea con el icono */
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: inline-block;
 }
+
 .navbar ul li h3:hover {
   border-radius: 5px;
   color: #f8d407;
-
 }
 
-.navbar ul li a svg,
-.navbar ul li a img {
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Añadimos una transición suave */
-  color: inherit; /* Los iconos heredan el color del texto */
-}
-
-/* Al hacer hover en los iconos o las imágenes (como la Excavadora) */
-.navbar ul li a:hover svg,
-.navbar ul li a:hover img {
-  opacity: 1; /* No cambia la opacidad de los iconos */
-  transform: none; /* No aumenta el tamaño de los iconos */
-}
 .navbar img,
 .navbar svg {
   width: 45px;
@@ -76,6 +67,7 @@
   margin-right: 8px;
 }
 
+/* Estilos para el icono de la hamburguesa */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -92,32 +84,41 @@
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
+/* Media Query para el rango de 1000px a 1212px */
+@media (max-width: 1212px) {
   .navbar ul {
-    display: none;
+    display: none;  /* Los enlaces estarán ocultos por defecto */
     flex-direction: column;
     gap: 10px;
     width: 100%;
     margin-top: 10px;
     font-size: 1rem;
   }
+
+  .navbar-collapse.show ul {
+    display: flex; /* Cuando se abre el menú hamburguesa */
+  }
+
+  .hamburger {
+    display: flex; /* Mostrar la hamburguesa */
+  }
+
   .navbar img,
   .navbar svg {
     width: 25px;
     height: 20px;
     margin-right: 8px;
   }
-  .navbar-collapse.show ul {
-    display: flex;
-  }
 
-  .hamburger {
-    display: flex;
-  }
   .company-link {
     font-size: 1rem;
     font-weight: bold;
     color: #010101;
     text-decoration: none;
   }
+}
+
+/* Media Query para pantallas más pequeñas, por ejemplo, menos de 1000px */
+@media (max-width: 1000px) {
+  /* Aquí las reglas ya no son necesarias, ya que son cubiertas por la media query anterior */
 }

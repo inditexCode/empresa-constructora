@@ -1,32 +1,30 @@
 import React from "react";
-import "./Imagenes.css"; // Importamos los estilos de la galería
+import "./Imagenes.css";
+import { ImageList, ImageListItem } from '@mui/material';
 
-// Importa todas las imágenes
-import img1 from "./img/1.webp";
-import img2 from "./img/2.jpg";
-import img3 from "./img/3.jpg";
-import img4 from "./img/4.jpg";
-import img5 from "./img/6.jpg";
-import img6 from "./img/7.png";
-import img7 from "./img/8.png";
-import img8 from "./img/9.png";
-
-const Imagenes = () => {
-  // Creamos un arreglo con las rutas de las imágenes
-  const imagenes = [img1, img2, img3, img4, img5, img6, img7, img8];
-
+const Imagenes = ({ imagenes }) => {
   return (
-
     <div className="contenedor_imaganes">
-    <h3 className="titulo_imagenes">GALERIA DE IMAGENES</h3>
-    <div className="galeria">
-      {imagenes.map((img, index) => (
-        <img key={index} src={img} alt={`Imagen ${index + 1}`} className="imagen" />
-      ))}
+      {/* Aquí eliminamos el atributo cols y dejamos que el CSS controle las columnas */}
+      <ImageList className="galeria" sx={{ width: '100%', height: 'auto' }}>
+        {imagenes.map((img, index) => (
+          <ImageListItem key={index} className="imagen-item">
+            <img
+              src={`${img.src}?w=248&fit=crop&auto=format`} // Usamos el src de la imagen
+              srcSet={`${img.src}?w=248&fit=crop&auto=format&dpr=2 2x`} // srcSet para optimización
+              alt={img.title} // Usamos el título como alt para la accesibilidad
+              loading="lazy"
+              className="imagen"
+            />
+            {/* Información sobre la imagen */}
+            <div className="imagen-info">
+              <h4 className="imagen-titulo">{img.title}</h4>
+              <p className="imagen-descripcion">{img.description}</p>
+            </div>
+          </ImageListItem>
+        ))}
+      </ImageList>
     </div>
-    </div>
-
-   
   );
 };
 

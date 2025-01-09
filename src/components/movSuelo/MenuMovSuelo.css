@@ -1,64 +1,93 @@
-.contenedo-p{
-  background-color: #fafafa;
-    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+/* Estilo general para el contenedor principal */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-}/* Estilo para el contenedor principal */
+.menu-mov-suelo-container {
+  background-color: rgba(251, 251, 251, 0.8); /* Verde con 80% de opacidad */
+}
 
-  
-  .container {
-    margin: 0 auto;
-    padding: 20px;
+/* Estilo general para el contenedor */
+.menu-mov-suelo-content {
+  width: 100%; /* El contenedor ocupará el 100% del ancho de la página */
+  height: auto;
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 10px 0; /* Añade un poco de espacio en la parte superior e inferior */
+  position: relative; /* Necesario para asegurar que los elementos dentro estén sobre la imagen de fondo */
+  z-index: 2; /* Asegura que los elementos del contenedor se muestren por encima de la imagen de fondo */
+  max-width: 1400px;
+}
+
+.menu-mov-suelo-estrellas {
+  padding: 20px 10px;
+  color: black;
+}
+
+/* Estilo para los elementos de la lista (li) */
+.menu-mov-suelo-list {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+h1 {
+  color: rgba(38, 38, 37, 0.904);
+  text-align: center; /* Centra el título */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  position: relative; /* Necesario para el pseudo-elemento */
+  display: inline-block; /* Hace que el h1 no ocupe todo el ancho y se ajuste al texto */
+}
+
+/* Añadir la línea degradada debajo del h1 */
+h1::after {
+  content: ""; /* El pseudo-elemento no tiene contenido */
+  position: absolute;
+  bottom: 0; /* Coloca la línea al fondo del h1 */
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho del h1 */
+  height: 2px; /* El grosor de la línea */
+  background: linear-gradient(to right, transparent, black, transparent); /* Degradado negro */
+  display: block;
+}
+
+/* Estilo de la fila */
+.menu-mov-suelo-row {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas en pantallas pequeñas */
+  justify-content: center; /* Centra los elementos dentro de la fila */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilo de los componentes hijos (en este caso, ServiciosMovSuelo) */
+.menu-mov-suelo-row > * {
+  width: 100%; /* Cada componente ocupará el 100% del contenedor disponible */
+  max-width: 100%; /* Asegura que no se exceda el 100% del ancho */
+  box-sizing: border-box; /* Asegura que el padding y los bordes no afecten el ancho */
+}
+
+/* Asegurarse de que las imágenes se ajusten al contenedor sin desbordarse */
+.menu-mov-suelo-row img {
+  width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* La imagen se ajustará al contenedor sin distorsionarse ni desbordarse */
+}
+
+/* Responsivo: Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-mov-suelo-content {
+    width: 100%; /* En pantallas pequeñas, el contenedor ocupará el 100% del ancho */
   }
-  
-  /* Estilos de los encabezados */
+
   h1 {
-    text-align: center;
-    font-size: 2rem; /* Tamaño de fuente inicial */
-    margin-bottom: 20px;
+    font-size: 1.5rem; /* Ajusta el tamaño del título para pantallas pequeñas */
   }
-  
-  /* Estilos para los componentes dentro del contenedor */
-  .container > div {
-    margin-bottom: 40px;
+
+  .menu-mov-suelo-row {
+    flex-direction: column; /* En pantallas pequeñas, los elementos de la fila estarán en columna */
+    align-items: center; /* Centra los elementos en columnas */
   }
-  
-  /* Media query para pantallas medianas (max-width: 1024px) */
-  @media (max-width: 1024px) {
-    .contenedo-p {
-      padding: 15px; /* Reducir padding en pantallas medianas */
-    }
-  
-    .container {
-      padding: 15px; /* Reducir padding en pantallas medianas */
-    }
-  
-    h1 {
-      font-size: 1.5rem; /* Reducir tamaño de fuente del encabezado */
-      margin-bottom: 15px;
-    }
-  
-    .container > div {
-      margin-bottom: 30px; /* Reducir margen entre los componentes */
-    }
-  }
-  
-  /* Media query para pantallas pequeñas (max-width: 768px) */
-  @media (max-width: 768px) {
-    .contenedo-p {
-      padding: 10px; /* Reducir padding en pantallas pequeñas */
-    }
-  
-    .container {
-      padding: 10px; /* Reducir padding en pantallas pequeñas */
-    }
-  
-    h1 {
-      font-size: 1.2rem; /* Reducir tamaño de fuente del encabezado */
-      margin-bottom: 10px;
-    }
-  
-    .container > div {
-      margin-bottom: 20px; /* Reducir margen entre los componentes */
-    }
-  }
-  
+}

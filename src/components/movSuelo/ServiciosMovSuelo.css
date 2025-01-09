@@ -1,0 +1,118 @@
+/* SeccionServicio.css */
+.servicio-individual {
+    margin-bottom: 40px;
+  }
+  
+  .modulo-flex-arreglo-servicio {
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .titulo-servicio {
+    background-color: #0c343d;
+    color: rgb(254, 254, 254);
+    font-size: 1.6rem;
+    padding: 10px 0;
+    padding-left: 8px;
+  }
+  
+  .modulo-titulo-arreglo-servicio {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c343d;
+    padding: 0 10px;
+  }
+  
+  .modulo-titulo-arreglo-servicio img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .modulo-separador-arreglo-servicio {
+    width: 0.1%;
+    max-width: 8.6458%;
+    background-color: #cccccc;
+    height: auto;
+  }
+  
+  .modulo-texto-arreglo-servicio {
+    width: 60%;
+  }
+  
+  .modulo-texto-arreglo-servicio .soporte-texto-arreglo-servicio p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .soporte-texto-arreglo-servicio ul {
+    color: #ffb600;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .modulo-texto-arreglo-servicio .soporte-texto-arreglo-servicio {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Media queries para pantallas medianas (hasta 768px) */
+  @media (max-width: 944px) {
+    .modulo-flex-arreglo-servicio {
+      flex-direction: column; /* Apilar los elementos en columna */
+      justify-content: flex-start; /* Alinear los elementos desde el principio */
+    }
+  
+    .modulo-titulo-arreglo-servicio {
+      width: 100%; /* La imagen ocupa todo el ancho */
+      order: 2; /* Mueve la imagen hacia abajo */
+    }
+  
+    .modulo-texto-arreglo-servicio {
+      width: 100%; /* El texto ocupa todo el ancho */
+      order: 1; /* Mantiene el texto arriba */
+    }
+  
+    .modulo-separador-arreglo-servicio {
+      display: none; /* Oculta el separador */
+    }
+  }
+  
+  /* Media queries para pantallas pequeñas (hasta 480px) */
+  @media (max-width: 480px) {
+    .modulo-flex-arreglo-servicio {
+      flex-direction: column; /* Apilar los elementos en columna */
+      justify-content: flex-start; /* Alinear los elementos desde el principio */
+    }
+  
+    .modulo-titulo-arreglo-servicio {
+      width: 100%; /* La imagen ocupa todo el ancho */
+      order: 2; /* Mueve la imagen hacia abajo */
+    }
+  
+    .modulo-texto-arreglo-servicio {
+      width: 100%; /* El texto ocupa todo el ancho */
+      order: 1; /* Mantiene el texto arriba */
+    }
+  
+    .modulo-separador-arreglo-servicio {
+      display: none; /* Oculta el separador */
+    }
+  
+    .titulo-servicio {
+      background-color: #0c343d;
+      color: white;
+      font-size: 1.2rem;
+      padding: 10px 0;
+      padding-left: 8px;
+    }
+  }
+  

@@ -1,5 +1,5 @@
 /* Estilos generales para pantallas grandes */
-.contenedor-trabajo1 {
+.contenedor-trabajo_2 {
     padding: 100px 20px; /* Padding arriba y abajo */
     box-sizing: border-box;
     margin: 0 auto;
@@ -9,7 +9,7 @@
     max-width: 1800px;
 }
 
-.modulo_flex {
+.modulo_flex_2 {
     padding: 18px;
     display: flex;
     flex-direction: row;
@@ -20,7 +20,7 @@
     height: auto;
 }
 
-.modulo_flex .modulo_titulo {
+.modulo_flex_2 .modulo_titulo_2 {
     width: 26%; /* Mantiene el ancho en pantallas grandes */
     text-align: center;
     display: flex;
@@ -28,43 +28,43 @@
     align-items: center;
 }
 
-.modulo_flex .modulo_titulo h2 {
+.modulo_flex_2 .modulo_titulo_2 h2 {
     font-size: 2rem;
     font-weight: 700;
     color: #404041;
     text-transform: uppercase;
     margin: 0 auto;
 }
-
-.modulo_flex .modulo_separador {
-    width: 0.1%; /* Ajuste en pantallas pequeñas */
-    max-width: 8.6458%; /* Máximo ancho en pantallas más grandes */
-    background-color: #cccccc; /* Ejemplo de color de fondo */
-    height: auto; /* Asegura que el separador se ajuste al contenido */
-}
-
-.modulo_flex .modulo_texto {
-    width: 52.39583%;
-    position: relative;
-}
-.soporte_texto{
+.soporte_texto_2{
     background-color: rgba(251, 251, 251, 0.8); /* Verde con 80% de opacidad */
 
 }
-.modulo_flex .modulo_texto .soporte_texto p {
+.modulo_flex_2 .modulo_separador_2 {
+    width: 0.1%; /* Ajuste en pantallas pequeñas */
+    max-width: 8.6458%; /* Máximo ancho en pantallas más grandes */
+    height: auto; /* Asegura que el separador se ajuste al contenido */
+    background-color: #cccccc; /* Ejemplo de color de fondo */
+}
+
+.modulo_flex_2 .modulo_texto_2 {
+    width: 52.39583%;
+    position: relative;
+}
+
+.modulo_flex_2 .modulo_texto_2 .soporte_texto_2 p {
     font-size: 1rem; /* Usa una unidad relativa para el tamaño de fuente */
     line-height: 1.6; /* Mejora la legibilidad */
     color: #404041;
     margin-bottom: 20px;
 }
 
-.soporte_texto ul {
+.soporte_texto_2 ul {
     color: rgb(58, 56, 56);
     font-weight: bold;
     font-size: 1rem;
 }
 
-.modulo_flex .modulo_texto .soporte_texto {
+.modulo_flex_2 .modulo_texto_2 .soporte_texto_2 {
     position: relative;
     padding: 20px;
 }
@@ -72,42 +72,44 @@
 /* Media Queries para mantener el diseño entre 1788px y 768px */
 /* Media Queries para mantener el diseño entre 1788px y 994px */
 @media (max-width: 994px) and (min-width: 768px) {
-    .modulo_flex {
+    .modulo_flex_2 {
         flex-wrap: nowrap; /* Mantiene los elementos en línea */
         flex-direction: row; /* Asegura que los elementos no cambien de posición */
         justify-content: space-between; /* Mantiene el espaciado entre los elementos */
     }
 
-    .modulo_flex .modulo_titulo,
-    .modulo_flex .modulo_separador,
-    .modulo_flex .modulo_texto {
+    .modulo_flex_2 .modulo_titulo_2,
+    .modulo_flex_2 .modulo_separador_2,
+    .modulo_flex_2 .modulo_texto_2 {
         width: auto; /* Asegura que los elementos mantengan su ancho relativo */
     }
 }
 
 /* Media Queries para Responsividad */
 @media (max-width: 994px) {
-    .modulo_flex {
+    .modulo_flex_2 {
         flex-direction: column;
         align-items: center;
     }
     
-    .modulo_flex .modulo_titulo {
+    .modulo_flex_2 .modulo_titulo_2 {
         width: 100%;
     }
 
-    .modulo_flex .modulo_separador {
+    .modulo_flex_2 .modulo_separador_2 {
         display: none; /* Oculta el separador en pantallas pequeñas */
     }
 
-    .modulo_flex .modulo_texto {
+    .modulo_flex_2 .modulo_texto_2 {
         width: 100%;
     }
 
-    .modulo_flex .modulo_texto .soporte_texto {
+    .modulo_flex_2 .modulo_texto_2 .soporte_texto_2 {
         padding: 10px; /* Reduce el padding para pantallas pequeñas */
     }
-   
 }
+
+
+
 
 
