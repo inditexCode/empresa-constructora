@@ -49,10 +49,11 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
               <h3 className="widget-title">Links</h3>
               <ul className="list-arrow">
-                <li><Link to="/contacto">Contactos</Link></li> {/* Cambiado a Link */}
-                <li><Link to="/trabajos-realizados">Trabajos Realizados</Link></li> {/* Cambiado a Link */}
-                <li><Link to="/movimientos-de-suelo">Movimiento de Suelo</Link></li> {/* Cambiado a Link */}
-                <li><Link to="/agroservicios">AgroServicios</Link></li> {/* Cambiado a Link */}
+                {/* Solo los Links de React Router */}
+                <li><Link to="/contacto">Contactos</Link></li>
+                <li><Link to="/trabajos-realizados">Trabajos Realizados</Link></li>
+                <li><Link to="/movimientos-de-suelo">Movimiento de Suelo</Link></li>
+                <li><Link to="/agroservicios">AgroServicios</Link></li>
               </ul>
             </div>
           </div>
