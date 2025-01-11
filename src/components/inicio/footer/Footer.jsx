@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Asegúrate de importar Link
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CallIcon from '@mui/icons-material/Call';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -48,10 +49,10 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
               <h3 className="widget-title">Links</h3>
               <ul className="list-arrow">
-                <li><a href="/contacto">Contactos</a></li>
-                <li><a href="/trabajos-realizados">Trabajos Realizados</a></li>
-                <li><a href="/movimientos-de-suelo">Movimiento de Suelo</a></li>
-                <li><a href="/agroservicios">AgroServicios</a></li>
+                <li><Link to="/contacto">Contactos</Link></li> {/* Cambiado a Link */}
+                <li><Link to="/trabajos-realizados">Trabajos Realizados</Link></li> {/* Cambiado a Link */}
+                <li><Link to="/movimientos-de-suelo">Movimiento de Suelo</Link></li> {/* Cambiado a Link */}
+                <li><Link to="/agroservicios">AgroServicios</Link></li> {/* Cambiado a Link */}
               </ul>
             </div>
           </div>
