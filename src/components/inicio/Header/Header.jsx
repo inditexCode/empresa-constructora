@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";  // Importamos el componente Link
 import img1 from "./img/camiontierra.webp";
-import img2 from "./img/vacas.jpg";
+// Eliminamos la importación de img2, ya que usaremos el enlace de Cloudinary
 import img3 from "./img/maqui.jpg";
 import img4 from "./img/maqui2.jpg";
 import "./Header.css"; // Asegúrate de tener el archivo CSS para los estilos
@@ -16,7 +16,8 @@ const Header = () => {
       link: "/agroservicios"  // Ruta para el primer botón
     },
     { 
-      src: img2, 
+      // Usamos el enlace de Cloudinary para la imagen
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/vacas", 
       title: "Conoce todos nuestros servicios", 
       buttonText: "Descubre más", 
       link: "/movimientos-de-suelo"  // Ruta para el segundo botón
