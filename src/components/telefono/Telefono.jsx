@@ -1,7 +1,6 @@
 // Telefono.js
 import React from "react";
 import "./Telefono.css"; // Archivo CSS específico para estilos de la tarjeta
-import whatsappIcon from "./img/Whatsapp.png"; // Importa la imagen del icono de WhatsApp
 
 const Telefono = () => {
   return (
@@ -17,7 +16,7 @@ const Telefono = () => {
 
       {/* Sección con enlace para enviar WhatsApp */}
       <h3 className="telefono-whatsapp">
-         {" "}
+        {" "}
         <a
           href="https://wa.me/+5493424869824"
           target="_blank"
@@ -25,8 +24,8 @@ const Telefono = () => {
           className="contact-link"
         >
           <img
-            src={whatsappIcon}
-            alt="WhatsApp Icon"
+            src="https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/whatsapp"
+            alt="WhatsApp"
             className="whatsapp-icon"
           />
         </a>
