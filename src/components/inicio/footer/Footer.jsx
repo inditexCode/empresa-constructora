@@ -1,4 +1,7 @@
 import React from "react";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import CallIcon from '@mui/icons-material/Call';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import "./Footer.css"; // Asegúrate de tener el archivo CSS para los estilos
 
 const Footer = () => {
@@ -16,6 +19,26 @@ const Footer = () => {
                 Capaz de satisfacer los requerimientos de sus clientes abarcando
                 desde el estudio del proyecto, hasta la finalización de la obra.
               </p>
+              <div className="info-footer">
+                <div className="info-item">
+                  <LocationOnIcon />
+                  <p>25 de Mayo 072 - Nelson, Santa Fe</p>
+                </div>
+                <div className="info-item">
+                  {/* Enlace para hacer llamada */}
+                  <a href="tel:+543424869824" className="info-item">
+                    <CallIcon />
+                    <p className="sp">342-4869824</p>
+                  </a>
+                </div>
+                <div className="info-item">
+                  {/* Enlace para WhatsApp */}
+                  <a href="https://wa.me/543424869824" target="_blank" rel="noopener noreferrer" className="info-item">
+                    <WhatsAppIcon />
+                    <p className="sp">+54 342 486 9824</p>
+                  </a>
+                </div>
+              </div>
             </div>
             {/* Columna Vacía */}
             <div className="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
@@ -33,8 +56,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      
       </div>
+
       {/* Sección de Derechos Reservados */}
       <div className="footer-bottom">
         <div className="container text-center">

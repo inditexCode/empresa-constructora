@@ -1,6 +1,5 @@
 import React from 'react';
 import ServiciosMovSuelo from './ServiciosMovSuelo'; // Importamos el componente reutilizable
-import Carousel from "../agroServicios/carousel/carousel";
 import Telefono from "../telefono/Telefono";
 import imgCompactacion from './img/1.jpg'; // Ruta de imagen
 import imgDemoliciones from './img/2.png'; // Ruta de imagen
@@ -8,16 +7,20 @@ import imgNivelaciones from './img/3.png'; // Ruta de imagen
 import imgVentaEscombro from './img/4.jpg'; // Ruta de imagen
 import imgVentaTierra from './img/5.png'; // Ruta de imagen
 import imgZanjeo from './img/5.png'; // Ruta de imagen
+import imagen from './img/maqui.jpg'; // Ruta de imagen
+
 import "./MenuMovSuelo.css"; // Estilos generales para el menú
 import Footer from "../inicio/footer/Footer";
 import TextRating from '../agroServicios/TextRating'; // Importa el componente de calificación
+
 
 const MenuMovSuelo = () => {
   return (
     <>
       <div className="menu-mov-suelo-container">
         <Telefono />
-        <Carousel />
+        <img className='imagen-contacto-mov-suelo' src={ imagen  } alt="Fondo imagen" />
+
         <div className="menu-mov-suelo-content">
           <div className="menu-mov-suelo-row">
             <ServiciosMovSuelo

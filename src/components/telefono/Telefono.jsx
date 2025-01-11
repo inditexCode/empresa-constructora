@@ -7,17 +7,17 @@ const Telefono = () => {
   return (
     <div className="telefono-container">
       {/* Sección con enlace para llamar por teléfono */}
-      <h2 className="telefono-heading">
+      <h3 className="telefono-heading">
         Teléfono: {" "}
         <i className="bi bi-telephone-forward-fill"></i> {/* Icono de teléfono */}
         <a href="tel:+5493424869824" className="contact-link">
           3424869824
         </a>
-      </h2>
+      </h3>
 
       {/* Sección con enlace para enviar WhatsApp */}
       <h3 className="telefono-whatsapp">
-        WhatsApp: {" "}
+         {" "}
         <a
           href="https://wa.me/+5493424869824"
           target="_blank"

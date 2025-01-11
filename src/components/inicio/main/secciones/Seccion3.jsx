@@ -35,8 +35,8 @@ const Seccion3 = () => {
     <div className="seccion3-container">
       {/* Columna Izquierda */}
       <div className="menu-izquierda">
-        <h2>TRAYECTORIA AL SERVICIO DEL CAMPO Y DE LA CONSTRUCCIÓN</h2>
-        <p>
+        <h2 className="title-grid">TRAYECTORIA AL SERVICIO DEL CAMPO Y DE LA CONSTRUCCIÓN</h2>
+        <p className="parrafo-grid">
           Una Empresa que se destaca por su cumplimiento, calidad y costos.
           Capaz de satisfacer los requerimientos de sus clientes abarcando desde
           el estudio del proyecto, hasta la finalización de la obra. La
@@ -48,8 +48,8 @@ const Seccion3 = () => {
         <div className="icon-grid">
   {iconItems.map((item, index) => (
     <div className="icon-item" key={index}>
-      <item.Icon style={{ fontSize: "60px", color: "gold" }} />
-      <h4>{item.title}</h4>
+      <item.Icon style={{ fontSize: "60px", color: "#ffb600" }} />
+      <h4 >{item.title}</h4>
     </div>
   ))}
 </div>
@@ -57,8 +57,8 @@ const Seccion3 = () => {
 
       {/* Columna Derecha */}
       <div className="menu-derecha">
-        <h2>NUESTRAS POLÍTICAS</h2>
-        <p>
+        <h2  className="title-grid">NUESTRAS POLÍTICAS</h2>
+        <p className="parrafo-grid">
           MARELLI CONSTRUCTORA S.A. asume el compromiso de aplicar y mejorar
           permanentemente un Sistema de Gestión Integrado para asegurar la
           entrega de productos y servicios confiables que cumplan con los

@@ -1,12 +1,11 @@
 import React from "react";
-import "./Fila.css"; // Asegúrate de importar los estilos
+import "./Fila.css";
 
 const Fila = ({ title, img, description }) => {
   return (
-    <div className="fila">
-      <h3>{title}</h3>
-      <div className="contenido">
-        <img src={img} alt={title} className="icon" />
+    <div className="icon-container">
+      <img src={img} alt={title} className="icon" />
+      <div className="description-box">
         <p>{description}</p>
       </div>
     </div>

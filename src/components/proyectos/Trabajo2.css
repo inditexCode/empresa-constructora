@@ -108,6 +108,11 @@
         padding: 10px; /* Reduce el padding para pantallas pequeñas */
     }
 }
+@media (max-width: 480px){
+      .modulo_flex_2{
+        padding: 0;
+      }
+}
 
 
 

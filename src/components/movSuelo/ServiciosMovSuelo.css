@@ -26,12 +26,12 @@
     justify-content: center;
     align-items: center;
     background-color: #0c343d;
-    padding: 0 10px;
   }
   
   .modulo-titulo-arreglo-servicio img {
     max-width: 100%;
     height: auto;
+
   }
   
   .modulo-separador-arreglo-servicio {
@@ -92,7 +92,9 @@
       flex-direction: column; /* Apilar los elementos en columna */
       justify-content: flex-start; /* Alinear los elementos desde el principio */
     }
-  
+    .modulo-texto-arreglo-servicio .soporte-texto-arreglo-servicio{
+      padding: 0;
+    }
     .modulo-titulo-arreglo-servicio {
       width: 100%; /* La imagen ocupa todo el ancho */
       order: 2; /* Mueve la imagen hacia abajo */

@@ -1,58 +1,85 @@
 import React from "react";
-import Fila from "./Fila"; // Importa el componente Fila
-import imagen from "./img/s.jpg";
-import img1 from "./img/desmonte-2.png";
-import img2 from "./img/retro.png";
-import img3 from "./img/retro.png";
-import img4 from "./img/desmonte-2.png";
-import img5 from "./img/maq-rodillo-3.png";
-import img6 from "./img/maq-grande.png";
-import img7 from "./img/retro-tierra.png";
-import img8 from "./img/exc.png";
-
-import "./Seccion.css"; // Asegúrate de importar los estilos
+import "./Seccion.css"; // Este archivo contiene los estilos CSS
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Seccion1 = () => {
-  const columnaIzquierda = [
-    { title: "LIMPIEZA DE TERRENOS", img: img1, description: "La limpieza de terrenos en campos es un proceso esencial para preparar el suelo para la siembra o la construcción." },
-    { title: "REPARACIÓN DE TAMBO", img: img2, description: "La reparación de tambo es una tarea crucial para mantener en buen estado las estructuras utilizadas en la actividad ganadera." },
-    { title: "LIMPIEZA DE FEEDLOT", img: img3, description: "La limpieza de feedlot es fundamental para asegurar un ambiente saludable y seguro para el ganado." },
-    { title: "DESMONTES", img: img4, description: "Los desmontes en campos son un proceso necesario para eliminar árboles, arbustos y vegetación no deseada que impidan el uso agrícola." },
-  ];
-
-  const columnaDerecha = [
-    { title: "COMPACTACIÓN", img: img5, description: "La compactación del suelo es un proceso que consiste en aumentar la densidad del terreno mediante la aplicación de presión." },
-    { title: "NIVELACIONES", img: img6, description: "Las nivelaciones en terrenos son un proceso clave para corregir las irregularidades del suelo y garantizar una superficie plana." },
-    { title: "ZANJEO", img: img7, description: "El zanjeo es un proceso que consiste en excavar zanjas en el suelo para diversos fines, como drenaje, instalación de tuberías o cableado." },
-    { title: "EXCAVACIONES", img: img8, description: "Las excavaciones son un proceso fundamental en la construcción y preparación de terrenos, que consiste en remover tierra para crear cimientos." },
+  const filas = [
+    {
+      title: "MOVIMIENTO DE SUELO Y OBRAS",
+      columns: [
+        { subtitle: "Excavaciones" },
+        { subtitle: "Demoliciones" },
+        { subtitle: "Suelo y relleno" },
+        { subtitle: "Compactación" },
+        { subtitle: "Nivelaciones" },
+        { subtitle: "Zanjeo" },
+      ],
+    },
+    {
+      title: "AGROSERVICIOS - AGROVIAL",
+      columns: [
+        { subtitle: "Caminos" },
+        { subtitle: "Desmontes" },
+        { subtitle: "Arreglos de tanques de agua tambo, y más" },
+        { subtitle: "Feedlot" },
+        { subtitle: "Limpieza de terrenos" },
+        { subtitle: "Excavaciones" },
+      ],
+    },
+    {
+      title: "ALQUILERES DE MÁQUINAS Y MÁS",
+      columns: [
+        { subtitle: "Excavadora" },
+        { subtitle: "Retroexcavadora" },
+        { subtitle: "Camiones Volcadores" },
+        { subtitle: "Tractores" },
+        { subtitle: "Venta de Tierra" },
+        { subtitle: "Venta de escombros" },
+      ],
+    },
   ];
 
   return (
-    <div className="seccion-container">
-      <div className="columna-izquierda">
-        {columnaIzquierda.map((item, index) => (
-          <Fila
-            key={index}
-            title={item.title}
-            img={item.img}
-            description={item.description}
-          />
-        ))}
+    <div className="seccion1_flex">
+      <div className="seccion1_titulo">
+        <header>
+          <h2>¿Qué hacemos?</h2>
+        </header>
       </div>
 
-      <div className="columna-centro">
-        <img src={imagen} alt="Imagen" className="imagen" />
+      <div className="seccion1_separador">
+        <hr />
       </div>
 
-      <div className="columna-derecha">
-        {columnaDerecha.map((item, index) => (
-          <Fila
-            key={index}
-            title={item.title}
-            img={item.img}
-            description={item.description}
-          />
-        ))}
+      <div className="seccion1_texto">
+        <div className="seccion1_soporte_texto">
+          {filas.map((fila, index) => (
+            <div key={index} className="seccion1_fila">
+              {/* Usar Accordion para desplegar las columnas de subtítulos */}
+              <Accordion className="seccion1_accordion">
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls={`panel-${index}-content`}
+                  id={`panel-${index}-header`}
+                >
+                  <h3>{fila.title}</h3>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <div className="seccion1_fila-columnas">
+                    {fila.columns.map((col, colIndex) => (
+                      <div key={colIndex} className="seccion1_columna">
+                        <p>{col.subtitle}</p>
+                      </div>
+                    ))}
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

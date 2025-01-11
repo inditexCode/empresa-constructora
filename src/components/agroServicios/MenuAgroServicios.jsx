@@ -1,6 +1,5 @@
 import React from "react";
 import SeccionServicio from "./SeccionServicio"; // Importamos el componente reutilizable
-import Carousel from "./carousel/carousel";
 import Telefono from "../telefono/Telefono";
 import imgArregloTanques from "./img/1.jpg";
 import imgCaminos from "./img/tanque1.jpg";
@@ -8,6 +7,8 @@ import imgDesmonte from "./img/tanque2.jpg";
 import imgFeedlot from "./img/tanque3.jpg";
 import imgLimpiezaTerrenos from "./img/tanque4.jpg";
 import imgReparacionTambo from "./img/tanque5.jpg";
+import imagen from "./img/vacas.jpg";
+
 import "./MenuAgroServicios.css";
 import Footer from "../inicio/footer/Footer";
 import TextRating from './TextRating'; // Importa el componente de calificación
@@ -17,7 +18,7 @@ const MenuAgroServicios = () => {
     <>
       <div className="contenedor-principal">
         <Telefono />
-        <Carousel />
+        <img className='imagen-contacto-agroservicios' src={ imagen  } alt="Fondo imagen" />
         <div className="container">
           <div className="row">
             <SeccionServicio

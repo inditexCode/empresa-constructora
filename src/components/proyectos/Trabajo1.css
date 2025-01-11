@@ -109,5 +109,10 @@
     }
    
 }
+@media (max-width: 480px){
+     .modulo_flex{
+        padding: 0;
+     }
+} 
 
 

@@ -26,7 +26,6 @@
     justify-content: center;
     align-items: center;
     background-color: #0c343d;
-    padding: 0 10px;
 
   }
   
@@ -72,7 +71,9 @@
     flex-direction: column; /* Apilar los elementos en columna */
     justify-content: flex-start; /* Alinear los elementos desde el principio */
   }
-
+  .modulo-texto-arreglo .soporte-texto-arreglo{
+    padding: 0;
+  }
   .modulo-titulo-arreglo {
     width: 100%; /* La imagen ocupa todo el ancho */
     order: 2; /* Mueve la imagen hacia abajo */
@@ -115,4 +116,5 @@
     padding: 10px 0;
     padding-left: 8px;
   }
+
 }

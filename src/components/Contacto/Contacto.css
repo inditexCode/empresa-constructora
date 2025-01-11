@@ -123,14 +123,18 @@
   .button-form {
     font-size: 14px; /* Ajustar tamaño del botón en pantallas medianas */
   }
+  .imagen-contacto {
+    width: 100%;
+    height: auto;
+    max-height: 20vh !important; /* Máximo 50% de la altura de la ventana */
+    object-fit: cover; /* Ajustar la imagen sin distorsionarla */
+    margin-bottom: 50px; /* Espacio de 50px desde la imagen hasta el formulario */
+  }
 }
 
 /* Media Query para pantallas pequeñas (como móviles) */
 @media (max-width: 576px) {
-  .imagen-contacto {
-    width: 100%; /* Ajuste completo para pantallas pequeñas */
-    max-height: 35vh; /* Ajustar altura aún más en móviles */
-  }
+
 
   .conteiner-contacto h4 {
     font-size: 1rem; /* Reducir más el tamaño de fuente en pantallas pequeñas */

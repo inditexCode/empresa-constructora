@@ -3,7 +3,7 @@
   margin: 100px 20px;
   padding: 50px 20px;
   width: 100%; /* Asegura que ocupe todo el ancho */
-  box-shadow: 0  0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+  box-shadow: 0  0 4px 4px #0c343d; /* Agrega una sombra suave */
   border-radius: 10px; /* Opcional: bordes redondeados para un acabado más limpio */
   background-color: #ffffff; /* Asegúrate de tener un fondo blanco o claro */
   /*background: #ffb600;*/

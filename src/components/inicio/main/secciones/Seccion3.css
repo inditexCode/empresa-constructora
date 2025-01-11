@@ -11,10 +11,11 @@
   .menu-derecha {
     flex: 1;
     padding: 20px;
-    /*background-color: #0c343d;*/
+    background-color: #0c343d;
+  /*
+      background: #f9f9f9;
 
-    background: #f9f9f9;
-    border-radius: 10px;
+  */
   }
   
   .icon-grid {
@@ -34,13 +35,14 @@
   
   .icon {
     font-size: 80px; /* Tamaño del icono */
-    color: gold;
+    color:gold;
+
   }
   
   .icon-item h4 {
     margin: 0;
     font-size: 1rem;
-    color: #333;
+    color: #f0eeee;
   }
   
   .menu-izquierda {
@@ -52,12 +54,16 @@
   }
   
   .desplegable {
-    border: 0.5px solid rgb(202, 200, 200);
+    border: 0.5px solid #ffb600;
+
   }
-  
+  /*
+      border: 0.5px solid rgb(202, 200, 200);
+
+  */
   .desplegable:hover {
-    background-color: rgb(8, 8, 8);
-    color: white;
+    background-color: #ffb600;
+    color: black;
   }
   
   .dropdown-title {
@@ -65,22 +71,18 @@
     font-weight: bold;
   }
   
-  h2 {
+  .title-grid{
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #333;
+    color: #f1eeee;
   }
   
-  h4 {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 10px;
-  }
+ 
   
-  p {
+  .parrafo-grid {
     font-size: 1rem;
     line-height: 1.5;
-    color: #333;
+    color: #f1eeee;
   }
   
   .dropdown-container {
@@ -96,12 +98,19 @@
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
+    color: #f0eeee;
+
   }
-  
+  .btn.dropdown-toggle:hover{
+    color: black;
+  }
   .dropdown-title {
-    flex-grow: 1;
+    color: white;
   }
-  
+  .dropdown-title:hover {
+    flex-grow: 1;
+    color: black;
+  }
   .dropdown-content {
     margin-top: 10px;
     padding: 10px;
@@ -113,7 +122,13 @@
   /* Media Query para 768px */
   @media (max-width: 768px) {
     .seccion3-container {
-      flex-direction: column; /* Las columnas se apilan */
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 80px 0;
+      padding: 0;
+      flex-wrap: wrap; /* Permite el ajuste en pantallas pequeñas */
     }
   
     .menu-izquierda,

@@ -4,6 +4,13 @@ body {
   padding: 0;
   height: 100%;
 }
+.imagen-contacto-agroservicios {
+  width: 100%;
+  height: auto;
+  max-height: 50vh;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
 .contenedor-principal {
   background-color: rgba(251, 251, 251, 0.8); /* Verde con 80% de opacidad */
 }
@@ -79,5 +86,12 @@ h1::after {
   .row {
     flex-direction: column; /* En pantallas pequeñas, los elementos de la fila estarán en columna */
     align-items: center; /* Centra los elementos en columnas */
+  }
+  .imagen-contacto-agroservicios {
+    width: 100%;
+    height: auto;
+    max-height: 20vh;
+    object-fit: cover;
+    margin-bottom: 50px;
   }
 }

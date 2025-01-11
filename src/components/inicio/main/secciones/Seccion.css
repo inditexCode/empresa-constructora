@@ -1,78 +1,112 @@
-.seccion-container {
-  padding: 80px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 30px;
-  margin: auto;
-}
-
-.columna-izquierda,
-.columna-derecha {
-  margin: 0 10px;
+/* Estilos principales del contenedor */
+.seccion1_flex {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 35%;
-}
-.fila{
-  margin-bottom: 40px;
-}
-
-.columna-centro {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: auto;
+  gap: 20px;
+  padding: 40px;
+  margin: 3% 0;
+  background-color: rgb(34, 35, 35);
 }
 
-.imagen {
-  height: auto;
-  object-fit: cover;
+.seccion1_flex .seccion1_titulo h2 {
+  font-size: 2.8rem !important;
+  font-weight: 700 !important;
+  color: white !important;
 }
 
-@media (max-width: 1024px) {
-  .seccion-container {
-    flex-direction: row;
-  }
-
-  .columna-izquierda,
-  .columna-derecha {
-    width: 45%;
-  }
-
-  .columna-centro {
-    width: 50%;
-  }
-
-  .imagen {
-    width: 110%;
-    height: 100%;
-  }
+.seccion1_texto {
+  width: 100%;
+  max-width: 1200px;
 }
 
-@media (max-width: 993px) {
-  .seccion-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .columna-izquierda,
-  .columna-derecha {
-    width: 100%;
-  }
-
-  .columna-centro {
-    width: 100%;
-  }
-
-  .imagen {
-    width: 90%;
-  }
- 
+.seccion1_soporte_texto {
+  width: 100%;
 }
-@media (max-width: 768px){
-  h3{
-    font-size: 1.1rem;
+
+.seccion1_fila {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eb0505;
+}
+
+.seccion1_fila h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  color: #eb0505;
+}
+
+/* Contenedor de las columnas en la fila */
+.seccion1_fila-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.seccion1_columna {
+  width: 30%; /* Cada columna ocupará un 30% del ancho disponible */
+  padding: 10px;
+}
+
+.seccion1_columna p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: white;
+}
+
+/* Estilos para el Accordion */
+.seccion1_accordion {
+  width: 100%;
+  background-color: #333;
+
+}
+.css-1wqf3nl-MuiAccordionSummary-expandIconWrapper{
+  color: #eb0505 !important;
+
+}
+.seccion1_accordion .MuiAccordionSummary-root {
+  background-color: #333;
+}
+.seccion1_accordion .MuiAccordionSummary-root:hover{
+  background-color: rgb(194, 186, 186);
+}
+
+.seccion1_accordion .MuiAccordionDetails-root {
+  background-color: #444;
+}
+
+/* Pantallas pequeñas (hasta 540px) */
+@media (max-width: 540px) {
+  .seccion1_flex {
+    padding: 20px;
+    margin: 5% 0;
+  }
+
+  .seccion1_flex .seccion1_titulo h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .seccion1_fila h3 {
+    font-size: 0.9rem;
+  }
+
+  .seccion1_fila-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .seccion1_columna {
+    width: 48%; /* Dos columnas por fila, cada columna ocupará el 48% */
+    margin-bottom: 15px; /* Añadir espacio entre las filas */
+  }
+
+  .seccion1_columna p {
+    font-size: 0.9rem;
   }
 }

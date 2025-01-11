@@ -14,7 +14,6 @@
   .telefono-heading {
     text-align: center; /* Centra el texto */
     font-size: 1.5rem; /* Tamaño de fuente ajustado */
-    margin-bottom: 20px;
     padding: 10px 40px;
     position: relative; /* Necesario para el pseudo-elemento */
     display: inline-block; /* Hace que el texto no ocupe todo el ancho */

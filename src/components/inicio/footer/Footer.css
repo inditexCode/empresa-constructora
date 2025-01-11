@@ -110,7 +110,6 @@ body, p {
     font-size: 1.5rem;
   }
   .footer-bottom {
-    color: #ffffff;
     padding: 20px 0;
   }
   
@@ -127,7 +126,35 @@ body, p {
     margin: 0;
     font-size: 1rem;
   }
+  .info-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre los elementos */
+    margin-top: 20px;
+  }
+  .info-footer a {
+    text-decoration: none;
+  }
+  .info-footer a:hover {
+    text-decoration: 2px solid underline;
+    color: #ffb600;
+  }
+  .info-item {
+    display: flex;
+  }
   
+  .info-item p {
+    font-size: 1rem;
+    color: #fff; /* Color blanco para el texto */
+    margin-left: 10px;
+    font-weight: 100;
+  font-family:inherit;
+  }
+  
+  .info-item svg {
+    font-size: 1.5rem; /* Tamaño de los íconos */
+    color: #ffb600; /* Color de los íconos (puedes cambiarlo si lo deseas) */
+  }
   /* Para pantallas medianas (tabletas, pantallas entre 768px y 991px) */
 @media (max-width: 991px) {
     .col-lg-4, .col-lg-3 {

@@ -7,7 +7,7 @@
     background-color: white; /* Fondo semi-transparente */
     padding: 15px ;
     z-index: 999; /* Asegura que el panel quede por encima del mapa */
-    width: 230px; /* Establece un ancho fijo para el panel */
+    width: 260px; /* Establece un ancho fijo para el panel */
     max-width: 100%; /* Asegura que el panel no se desborde */
 }
 
@@ -35,7 +35,7 @@
 .info-panel p {
     margin: 8px 0;
     font-size: 14px;
-    color: rgb(90, 89, 89);
+    color: #5b5b5b;
 }
 
 /* Media queries para pantallas pequeñas */

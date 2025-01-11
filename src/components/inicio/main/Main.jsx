@@ -15,15 +15,13 @@ const Main = () => {
       <>
       <div className="contenedor-main">
         <div className="title">
-        <h4>SOMOS ESPECIALISTAS</h4>
-        <h2>NUESTROS SERVICIOS</h2>
+        <h4>NUESTRA EMPRESA</h4>
         </div>
         <Seccion1/>
         <MenuImg/>
         <Seccion2 />
         <Seccion3/>
         <div className="mapa">
-          <h2 className="title-mapa">PÓDES ENCONTRARNOS</h2>
         <Mapa/>
         </div>
         <Seccion4/>
