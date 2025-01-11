@@ -7,7 +7,7 @@ import imgDesmonte from "./img/tanque2.jpg";
 import imgFeedlot from "./img/tanque3.jpg";
 import imgLimpiezaTerrenos from "./img/tanque4.jpg";
 import imgReparacionTambo from "./img/tanque5.jpg";
-import imagen from "./img/vacas.jpg";
+import imagen from "./img/Vacas.jpg";
 
 import "./MenuAgroServicios.css";
 import Footer from "../inicio/footer/Footer";
