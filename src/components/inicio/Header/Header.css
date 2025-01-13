@@ -145,7 +145,7 @@
 @media (max-width: 576px) {
   .carousel-container {
     height: 30vh;
-    padding: 10px 10px;
+    padding:0;
   }
 
   .carousel-caption {

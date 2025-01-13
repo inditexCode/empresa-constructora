@@ -1,6 +1,5 @@
 import React from 'react';
 import ServiciosMovSuelo from './ServiciosMovSuelo'; // Importamos el componente reutilizable
-import Telefono from "../telefono/Telefono";
 import imgCompactacion from './img/1.jpg'; // Ruta de imagen
 import imgDemoliciones from './img/2.png'; // Ruta de imagen
 import imgNivelaciones from './img/3.png'; // Ruta de imagen
@@ -18,7 +17,6 @@ const MenuMovSuelo = () => {
   return (
     <>
       <div className="menu-mov-suelo-container">
-        <Telefono />
         <img className='imagen-contacto-mov-suelo' src={ imagen  } alt="Fondo imagen" />
 
         <div className="menu-mov-suelo-content">

@@ -7,7 +7,7 @@ const Telefono = () => {
     <div className="telefono-container">
       {/* Sección con enlace para llamar por teléfono */}
       <h3 className="telefono-heading">
-        <i className="bi bi-telephone-forward-fill"></i> {/* Icono de teléfono */}
+      <i className="bi bi-telephone-forward-fill"></i> {/* Icono de teléfono */}
         <a href="tel:+5493424869824" className="contact-link">
           3424869824
         </a>

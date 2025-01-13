@@ -1,6 +1,5 @@
 import React from "react";
 import SeccionServicio from "./SeccionServicio"; // Importamos el componente reutilizable
-import Telefono from "../telefono/Telefono";
 import imgArregloTanques from "./img/1.jpg";
 import imgCaminos from "./img/tanque1.jpg";
 import imgDesmonte from "./img/tanque2.jpg";
@@ -17,7 +16,6 @@ const MenuAgroServicios = () => {
   return (
     <>
       <div className="contenedor-principal">
-        <Telefono />
         <img className='imagen-contacto-agroservicios' src={ imagen  } alt="Fondo imagen" />
         <div className="container">
           <div className="row">

@@ -11,11 +11,17 @@
   }
   
   .telefono-heading {
-    text-align: center; /* Centra el texto */
-    font-size: 1.5rem; /* Tamaño de fuente ajustado */
+   
+    text-align: center;
+    font-size: 1.5rem;
     padding: 10px 40px;
-    position: relative; /* Necesario para el pseudo-elemento */
-    display: inline-block; /* Hace que el texto no ocupe todo el ancho */
+    position: relative;
+    display: flex;  /* Usamos flexbox para alinear los elementos */
+    align-items: center;  /* Centra verticalmente el contenido */
+    justify-content: center;  /* Centra el contenido horizontalmente */
+  }
+  .telefono-heading i {
+    margin-right: 10px; /* Espacio entre el icono y el número */
   }
   .contact-link{
     text-decoration: none;
@@ -51,12 +57,26 @@
     .telefono-container {
       width: 100%; /* En pantallas pequeñas, el contenedor ocupará el 100% del ancho */
     }
-  
-    .telefono-heading, .telefono-whatsapp {
-      font-size: 1.2rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
-    }
+    /* Ajustamos el layout para pantallas más pequeñas */
+  .telefono-heading {
+    flex-direction: row;  /* Alineamos los elementos en fila (icono y número) */
+    justify-content: flex-start;  /* Alineamos todo al principio */
+    font-size: 1.2rem;  /* Ajustamos el tamaño de la fuente */
+    padding: 10px 20px;  /* Reducimos el padding */
+  }
+
+  /* Aseguramos que el icono no se mueva fuera de su lugar */
+  .telefono-heading i {
+    margin-right: 10px;  /* Mantener el espacio entre el icono y el número */
+  }
+    /* Aseguramos que el enlace de teléfono no se estire a todo el ancho */
+  .telefono-heading .contact-link {
+    display: inline-block;
+    text-decoration: none;
+ }
   }
   @media (max-width: 480px){
+   
     .telefono-container{
       padding-right: 40px;
     }
