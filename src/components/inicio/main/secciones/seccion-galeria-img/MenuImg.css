@@ -100,7 +100,7 @@ body {
     }
 }
 
-@media (min-width: 300px) and(max-width: 488px) {
+@media (min-width: 200px) and(max-width: 488px) {
   
     .agroservicios, .construccion, .movimientoSuelo {
         font-size: 0.8rem !important;

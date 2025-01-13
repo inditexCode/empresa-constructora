@@ -9,24 +9,32 @@
   
   /* Estilo para los íconos del mapa (tamaño específico) */
   .leaflet-marker-icon {
-    width: 24px !important; /* Tamaño ajustado para los íconos */
-    height: 24px !important;
+    width: 25px !important; /* Tamaño ajustado para los íconos */
+    height: 30px !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
   }
   
   /* Estilo del tooltip */
-  .leaflet-tooltip {
-    padding: 4px !important; /* Espaciado en el tooltip */
-    max-width: 150px; /* Ancho máximo del tooltip */
-    word-wrap: break-word; /* Asegura que el texto no se desborde */
-    font-size: 12px; /* Tamaño de texto ajustado */
-  }
+/* Estilo para el Tooltip con fondo transparente */
+.leaflet-tooltip {
+  padding: 0 26px!important; /* Espaciado en el tooltip */
+  max-width: 150px; /* Ancho máximo del tooltip */
+  word-wrap: break-word; /* Asegura que el texto no se desborde */
+  font-size: 14px; /* Tamaño de texto ajustado */
+  background-color: transparent !important; /* Fondo transparente */
+  border: none !important; /* Elimina cualquier borde */
+  box-shadow: none !important; /* Elimina cualquier sombra */
+  color: rgb(59, 59, 198) !important; /* Color del texto, puedes cambiarlo según sea necesario */
+  font-family:"Open Sans", sans-serif ;
+}
+
   /* Estilo del tooltip */
 .custom-tooltip {
     padding: 8px !important; /* Espaciado en el tooltip */
     max-width: 200px; /* Ancho máximo del tooltip */
     word-wrap: break-word; /* Asegura que el texto no se desborde */
-    font-size: 14px; /* Tamaño de texto ajustado */
+    font-size: 16px; /* Tamaño de texto ajustado */
     background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
     border-radius: 5px; /* Bordes redondeados */
   }
-  

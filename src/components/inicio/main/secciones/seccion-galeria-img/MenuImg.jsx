@@ -48,9 +48,9 @@ const MenuImg = () => {
   React.useEffect(() => {
     if (value === 'agroservicios') {
       setImages([img1, img2, img3, img4, img5, imgA, imgB, imgC, imgD]);
-    } else if (value === 'construccion') {
-      setImages([M1, M2, M3, M4, M5, M6, M7, M8, M9]);
     } else if (value === 'movimientoSuelo') {
+      setImages([M1, M2, M3, M4, M5, M6, M7, M8, M9]);
+    } else if (value === 'AlquilerMáquinas') {
       setImages([C1, C2, C3, C4, C5, C6, C7, C8, C9]);
     }
     console.log('Imágenes:', images); // Verifica que las imágenes estén correctamente cargadas
@@ -71,8 +71,9 @@ const MenuImg = () => {
         aria-label="secondary tabs example"
       >
         <Tab value="agroservicios" label="Agroservicios" className="tab-title agroservicios" />
-        <Tab value="construccion" label="Construcción" className="tab-title construccion" />
         <Tab value="movimientoSuelo" label="Movimiento Suelo" className="tab-title movimientoSuelo" />
+        <Tab value="AlquilerMáquinas" label="Alquiler Máquinas" className="tab-title construccion" />
+
       </Tabs>
 
       {/* Usamos el componente EsqueletoImg y le pasamos las imágenes correspondientes */}

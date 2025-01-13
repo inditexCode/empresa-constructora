@@ -6,7 +6,7 @@ import Geolocalizacion from './Geolocalizacion'; // Importa el componente Geoloc
 import InfoPanel from './InfoPanel';
 
 // Coordenadas para el centro del mapa
-const position = [-31.274428, -60.762890];
+const position = [-31.275451, -60.763108];
 
 // URL base para los tile del mapa (OpenStreetMap)
 const urlBase = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
