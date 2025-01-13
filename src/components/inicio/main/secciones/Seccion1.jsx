@@ -46,7 +46,7 @@ const Seccion1 = () => {
     <div className="seccion1_flex">
       <div className="seccion1_titulo">
         <header>
-          <h2>¿Qué hacemos?</h2>
+          <h2>¿QUÉ HACEMOS?</h2>
         </header>
       </div>
 

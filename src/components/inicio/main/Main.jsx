@@ -14,9 +14,7 @@ const Main = () => {
     return (
       <>
       <div className="contenedor-main">
-        <div className="title">
-        <h4>NUESTRA EMPRESA</h4>
-        </div>
+       
         <Seccion1/>
         <MenuImg/>
         <Seccion2 />

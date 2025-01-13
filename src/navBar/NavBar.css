@@ -1,20 +1,37 @@
 /* Estilos generales para el Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;  /* Centra los elementos en pantalla grande */
   align-items: center;
-  padding: 35px 20px;
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #23282d;
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
 }
-
+.cabeza {
+  display: grid; /* Cambiar flex a grid */
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  justify-content: space-between;
+  align-items: center;  /* Alinea verticalmente en el centro */
+  width: 100%;  /* Se asegura que ocupe el 100% del ancho */
+  padding: 10px 60px;
+}
 .company-link {
   font-size: 1.5rem;
   font-weight: bold;
   color: #010101;
   text-decoration: none;
+  padding: 10px 20px;
+  margin:  40px;
+
 }
 
+.container {
+  padding-left: 0;  /* Elimina el padding izquierdo */
+  padding-right: 0; /* Elimina el padding derecho */
+}
+
+/* Links en pantalla grande */
 .navbar ul {
   list-style-type: none;
   display: flex;
@@ -22,6 +39,9 @@
   margin: 0;
   padding: 0 20px;
   font-size: 1rem;
+  justify-content: center;  /* Centra los links en pantallas grandes */
+  align-items: center;
+  width: 100%;
 }
 
 .navbar ul li {
@@ -31,11 +51,8 @@
 }
 
 .title_nav {
-  font-size: 0.8rem;
-}
-
-.navbar ul li:hover {
-  background-color: #050505a6;
+  font-size: 0.9rem;
+  color: white;
 }
 
 .navbar ul li a {
@@ -53,18 +70,12 @@
   padding: 0;
   line-height: 1;
   display: inline-block;
+  font-weight: 900;
 }
 
 .navbar ul li h3:hover {
   border-radius: 5px;
-  color: #f8d407;
-}
-
-.navbar img,
-.navbar svg {
-  width: 45px;
-  height: 40px;
-  margin-right: 8px;
+  color: #ffb600;
 }
 
 /* Estilos para el icono de la hamburguesa */
@@ -84,6 +95,15 @@
   transition: transform 0.3s ease;
 }
 
+.navbar-toggler {
+  display: flex;
+  justify-content: flex-start;  /* Alinea el botón hamburguesa a la izquierda */
+  align-items: center;
+  border: none;  /* Elimina el borde */
+  outline: none; /* Elimina el contorno al hacer foco */
+  background-color:#ffb600; /
+}
+
 /* Media Query para el rango de 1000px a 1212px */
 @media (max-width: 1212px) {
   .navbar ul {
@@ -93,6 +113,9 @@
     width: 100%;
     margin-top: 10px;
     font-size: 1rem;
+    align-items: start;  /* Alinea los links a la izquierda cuando el menú es desplegado */
+    padding: 0;
+    justify-content: flex-start;  /* Alinea los links al inicio */
   }
 
   .navbar-collapse.show ul {
@@ -102,12 +125,48 @@
   .hamburger {
     display: flex; /* Mostrar la hamburguesa */
   }
+  .cabeza {
+    padding-top: 40px;
 
-  .navbar img,
-  .navbar svg {
-    width: 25px;
-    height: 20px;
-    margin-right: 8px;
+    grid-template-columns: 1fr; /* Una sola columna para pantallas medianas */
+    text-align: center;  /* Centra el texto en pantallas medianas */
+  }
+  .company-link {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #010101;
+    text-decoration: none;
+  }
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 740px) {
+  /* Aquí también puedes hacer ajustes adicionales si es necesario */
+  .navbar{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .cabeza {
+    padding-top: 40px;
+    grid-template-columns: 1fr;  /* Una sola columna en pantallas más pequeñas */
+    text-align: center;  /* Centra el contenido */
+  }
+  .company-link {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #010101;
+    text-decoration: none;
+  }
+  .navbar ul li{
+    padding: 0;
+  }
+}
+@media (max-width: 440px) {
+  .cabeza {
+    padding-top: 40px;
+    grid-template-columns: 1fr;  /* Una sola columna en pantallas más pequeñas */
+    text-align: center;  /* Centra el contenido */
   }
 
   .company-link {
@@ -116,9 +175,5 @@
     color: #010101;
     text-decoration: none;
   }
-}
-
-/* Media Query para pantallas más pequeñas, por ejemplo, menos de 1000px */
-@media (max-width: 1000px) {
-  /* Aquí las reglas ya no son necesarias, ya que son cubiertas por la media query anterior */
+  
 }

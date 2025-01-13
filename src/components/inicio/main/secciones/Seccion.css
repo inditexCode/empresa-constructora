@@ -5,7 +5,6 @@
   align-items: center;
   gap: 20px;
   padding: 40px;
-  margin: 3% 0;
   background-color: rgb(34, 35, 35);
 }
 
@@ -27,7 +26,7 @@
 .seccion1_fila {
   margin-bottom: 40px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #eb0505;
+  border-bottom: 2px solid white;
 }
 
 .seccion1_fila h3 {
@@ -38,7 +37,7 @@
   display: flex;
   justify-content: start;
   align-items: start;
-  color: #eb0505;
+  color:#ffb600;
 }
 
 /* Contenedor de las columnas en la fila */
@@ -66,9 +65,10 @@
 
 }
 .css-1wqf3nl-MuiAccordionSummary-expandIconWrapper{
-  color: #eb0505 !important;
+  color: #ffb600 !important;
 
 }
+
 .seccion1_accordion .MuiAccordionSummary-root {
   background-color: #333;
 }

@@ -68,6 +68,8 @@
     .info-panel {
         width: 120px; /* Reducir aún más el ancho */
         padding: 8px; /* Reducir padding para pantallas más pequeñas */
+    top: 80%;
+     
     }
 
     /* Ajustar el tamaño del título */

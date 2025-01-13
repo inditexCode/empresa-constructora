@@ -76,7 +76,7 @@ body {
     background-color: #ffb600;
 }
 .title-img-menu .titulo-img-menu{
-    color: #333;
+    color: #0c343d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +119,8 @@ body {
 
     }
     .title-img-menu .titulo-img-menu{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: 25px;
     }
     
     .image-grid {

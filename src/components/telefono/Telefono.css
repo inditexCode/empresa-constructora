@@ -4,7 +4,6 @@
     height: auto;
     margin: 0 auto; /* Centra el contenedor en la página */
     padding: 20px 0; 
-    background: #f9f9f9;
     display: flex; /* Activar flexbox */
     justify-content: flex-end; /* Alinea los elementos al lado derecho */
     align-items: center; /* Centra los elementos verticalmente */
@@ -57,4 +56,12 @@
       font-size: 1.2rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
     }
   }
-  
+  @media (max-width: 480px){
+    .telefono-container{
+      padding-right: 40px;
+    }
+    .whatsapp-icon{
+      width: 35px;
+      height: 35px;
+    }
+  } 
