@@ -7,17 +7,26 @@ import imgFeedlot from "./img/tanque3.jpg";
 import imgLimpiezaTerrenos from "./img/tanque4.jpg";
 import imgReparacionTambo from "./img/tanque5.jpg";
 import imagen from "./img/Vacas.jpg";
-
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'; // Importa el ícono de flecha hacia arriba
 import "./MenuAgroServicios.css";
 import Footer from "../inicio/footer/Footer";
 import TextRating from './TextRating'; // Importa el componente de calificación
 
 const MenuAgroServicios = () => {
+   // Función para desplazarse hacia el principio de la página
+   const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
-      <div className="contenedor-principal">
-        <img className='imagen-contacto-agroservicios' src={ imagen  } alt="Fondo imagen" />
-        <div className="container">
+        <div className="contenedor-principal">
+        {/* Contenedor de la imagen de fondo y el título */}
+        <div className="imagen-titulo-container">
+          <div className="titulo-overlay">
+            <h4>AGROSERVICIOS</h4>
+          </div>
+        </div>
+          <div className="container">
           <div className="row">
             <SeccionServicio
               titulo="ARREGLOS DE TANQUES"
@@ -176,6 +185,10 @@ const MenuAgroServicios = () => {
             />
           </div>
         </div>
+      </div>
+        {/* Flecha de desplazamiento al principio de la página */}
+        <div className="scroll-to-top" onClick={scrollToTop}>
+        <KeyboardDoubleArrowUpIcon style={{ fontSize: 80}} />
       </div>
       <Footer />
     </>

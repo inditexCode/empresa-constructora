@@ -7,6 +7,7 @@ import imgVentaEscombro from './img/4.jpg'; // Ruta de imagen
 import imgVentaTierra from './img/5.png'; // Ruta de imagen
 import imgZanjeo from './img/5.png'; // Ruta de imagen
 import imagen from './img/maqui.jpg'; // Ruta de imagen
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'; // Importa el ícono de flecha hacia arriba
 
 import "./MenuMovSuelo.css"; // Estilos generales para el menú
 import Footer from "../inicio/footer/Footer";
@@ -14,11 +15,19 @@ import TextRating from '../agroServicios/TextRating'; // Importa el componente d
 
 
 const MenuMovSuelo = () => {
+    // Función para desplazarse hacia el principio de la página
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
   return (
     <>
       <div className="menu-mov-suelo-container">
-        <img className='imagen-contacto-mov-suelo' src={ imagen  } alt="Fondo imagen" />
-
+   {/* Imagen con el título sobrepuesta */}
+   <div className="imagen-titulo-container">
+          <div className="titulo-overlay">
+            <h4>MOVIMIENTO DE SUELO</h4>
+          </div>
+        </div>
         <div className="menu-mov-suelo-content">
           <div className="menu-mov-suelo-row">
             <ServiciosMovSuelo
@@ -137,7 +146,12 @@ const MenuMovSuelo = () => {
           </div>
         </div>
       </div>
+         {/* Flecha de desplazamiento al principio de la página */}
+         <div className="scroll-to-top" onClick={scrollToTop}>
+        <KeyboardDoubleArrowUpIcon style={{ fontSize: 80}} />
+      </div>
       <Footer />
+      
     </>
   );
 };

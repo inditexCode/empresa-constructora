@@ -6,6 +6,12 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import "./Footer.css"; // Asegúrate de tener el archivo CSS para los estilos
 
 const Footer = () => {
+
+  // Función para hacer scroll hacia el principio de la página
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="footer bg-overlay">
       <div className="footer-main">
@@ -50,10 +56,18 @@ const Footer = () => {
               <h3 className="widget-title">Links</h3>
               <ul className="list-arrow">
                 {/* Solo los Links de React Router */}
-                <li><Link to="/contacto">Contactos</Link></li>
-                <li><Link to="/trabajos-realizados">Trabajos Realizados</Link></li>
-                <li><Link to="/movimientos-de-suelo">Movimiento de Suelo</Link></li>
-                <li><Link to="/agroservicios">AgroServicios</Link></li>
+                <li>
+                  <Link to="/contacto" onClick={scrollToTop}>Contactos</Link>
+                </li>
+                <li>
+                  <Link to="/trabajos-realizados" onClick={scrollToTop}>Trabajos Realizados</Link>
+                </li>
+                <li>
+                  <Link to="/movimientos-de-suelo" onClick={scrollToTop}>Movimiento de Suelo</Link>
+                </li>
+                <li>
+                  <Link to="/agroservicios" onClick={scrollToTop}>AgroServicios</Link>
+                </li>
               </ul>
             </div>
           </div>

@@ -70,8 +70,8 @@ const MenuImg = () => {
         indicatorColor="secondary"
         aria-label="secondary tabs example"
       >
-        <Tab value="agroservicios" label="Agroservicios" className="tab-title agroservicios" />
         <Tab value="movimientoSuelo" label="Movimiento Suelo" className="tab-title movimientoSuelo" />
+        <Tab value="agroservicios" label="Agroservicios" className="tab-title agroservicios" />
         <Tab value="AlquilerMáquinas" label="Alquiler Máquinas" className="tab-title construccion" />
 
       </Tabs>

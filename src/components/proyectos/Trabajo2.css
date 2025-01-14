@@ -112,6 +112,9 @@
       .modulo_flex_2{
         padding: 0;
       }
+      .modulo_flex_2 .modulo_titulo_2 h2{
+        font-size: 1.3rem;
+      }
 }
 
 

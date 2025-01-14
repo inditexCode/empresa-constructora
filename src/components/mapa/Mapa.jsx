@@ -22,7 +22,7 @@ const Mapa = () => {
         <MapContainer center={position} zoom={16}> {/* Configura el contenedor del mapa con el centro y el nivel de zoom */}
           <TileLayer url={urlBase} attribution={atributo} /> {/* Capa de tiles para el mapa con URL base y atribución */}
           
-          <Markers /> {/* Componente que añade los marcadores al mapa */}
+          <Markers />{/*   Componente que añade los marcadores al mapa */}
           <Geolocalizacion /> {/* Componente para permitir la geolocalización del usuario */}
           <InfoPanel/>
         </MapContainer>

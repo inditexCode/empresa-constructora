@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: red; /* Color del ícono */
+    color: red !important; /* Color del ícono */
     font-size: 24px; /* Tamaño del ícono */
   }
   
@@ -13,6 +13,7 @@
     height: 30px !important;
     margin-top: 0 !important;
     margin-left: 0 !important;
+    color: red !important;
   }
   
   /* Estilo del tooltip */
