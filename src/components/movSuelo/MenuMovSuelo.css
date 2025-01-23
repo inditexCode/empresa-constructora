@@ -76,11 +76,13 @@ h1::after {
 }
 
 /* Asegurarse de que las imágenes se ajusten al contenedor sin desbordarse */
+/* Asegurar que las imágenes tengan la misma altura */
 .menu-mov-suelo-row img {
-  width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* La imagen se ajustará al contenedor sin distorsionarse ni desbordarse */
+  width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+  height: 480px; /* Fija la altura para que todas sean uniformes */
+  object-fit:cover; /* Recorta y ajusta la imagen sin distorsionarla */
 }
+
 
 /* Responsivo: Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {

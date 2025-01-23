@@ -16,9 +16,11 @@ const Seccion4 = () => {
           <div className="text-content">
             <p>
               Somos una empresa dedicada a proporcionar soluciones innovadoras y
-              personalizadas para nuestros clientes. Nuestro equipo está formado
-              por profesionales apasionados que trabajan juntos para crear
-              productos de alta calidad.
+              personalizadas para el sector agrícola, movimiento de suelos
+               y para nuestros clientes. Somos profesionales apasionados
+               y comprometidos, trabajamos en conjunto para garantizar servicios de alta 
+               calidad, adaptados a las necesidades específicas de cada cliente.
+            Nos enfocamos en cumplir con los siguientes pilares fundamentales:
             </p>
             <ul>
               <li><span>Plazo pactado</span></li>
@@ -26,13 +28,13 @@ const Seccion4 = () => {
               <li>Precio estipulado</li>
             </ul>
             <p>
-              Brindando a nuestros clientes asesoramiento técnico para resolver
-              las exigencias a la medida de sus necesidades, llegando siempre al
-              objetivo final: entregar la obra cumpliendo tiempos y pautas
-              establecidas.
+            Brindamos asesoramiento técnico integral para satisfacer las exigencias
+           del sector, asegurando que cada proyecto se entregue conforme a los tiempos
+           y pautas establecidos. Nuestra misión es ser un socio estratégico confiable,
+           ayudando a nuestros clientes a alcanzar sus objetivos con soluciones eficientes y efectivas.
             </p>
             <p>
-              Este estilo nos permite, desde hace más de 15 años, enorgullecernos
+              Este estilo nos permite, desde hace más de 10 años, enorgullecernos
               de un crecimiento sostenido reflejado en numerosos clientes que nos
               siguen eligiendo como un verdadero socio estratégico.
             </p>

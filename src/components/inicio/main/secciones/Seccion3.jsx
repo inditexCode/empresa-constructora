@@ -10,7 +10,7 @@ const Seccion3 = () => {
     {
       title: "CÁLIDAD Y CUMPLIMIENTO",
       content:
-        "Nuestro enfoque está en garantizar procesos de alta calidad que cumplan con las normativas y las expectativas de nuestros clientes.",
+        "Nuestro enfoque está en garantizar servicios de alta calidad que cumplan con las  expectativas de nuestros clientes.",
     },
     {
       title: "INNOVACIÓN Y DESARROLLO",
@@ -59,13 +59,10 @@ const Seccion3 = () => {
       <div className="menu-derecha">
         <h2  className="title-grid">NUESTRAS POLÍTICAS</h2>
         <p className="parrafo-grid">
-          MARELLI CONSTRUCTORA S.A. asume el compromiso de aplicar y mejorar
-          permanentemente un Sistema de Gestión Integrado para asegurar la
-          entrega de productos y servicios confiables que cumplan con los
-          requisitos y expectativas explícito e implícitos de sus clientes. Como
-          referencia para promover la calidad y la mejora continua en todos los
-          niveles de la organización se deberán considerar los siguientes
-          objetivos de calidad.
+        CANANI MOVIMIENTO DE SUELO Y AGROSERVICIOS, nos comprometemos a implementar y perfeccionar constantemente un Sistema de Gestión Integrado
+       que garantice la entrega de productos y servicios de alta calidad, cumpliendo con las necesidades y expectativas tanto explícitas
+        como implícitas de nuestros clientes. Para fomentar la calidad y la mejora continua en todos los niveles de la organización, 
+        se establecen como referencia los siguientes objetivos de calidad.
         </p>
 
         {/* Menú desplegable con títulos y contenidos personalizados */}

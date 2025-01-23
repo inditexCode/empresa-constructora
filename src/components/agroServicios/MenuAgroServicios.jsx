@@ -1,11 +1,11 @@
 import React from "react";
 import SeccionServicio from "./SeccionServicio"; // Importamos el componente reutilizable
-import imgArregloTanques from "./img/1.jpg";
-import imgCaminos from "./img/tanque1.jpg";
-import imgDesmonte from "./img/tanque2.jpg";
-import imgFeedlot from "./img/tanque3.jpg";
-import imgLimpiezaTerrenos from "./img/tanque4.jpg";
-import imgReparacionTambo from "./img/tanque5.jpg";
+import imgArregloTanques from "./img/arregloTanque2.jpg";
+import imgCaminos from "./img/caminos.jpg";
+import imgDesmonte from "./img/desmonte.jpg";
+import imgFeedlot from "./img/feedlot.jpg";
+import imgLimpiezaTerrenos from "./img/limpTerreno.png";
+import imgReparacionTambo from "./img/reaparacionTambo.jpg";
 import imagen from "./img/Vacas.jpg";
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'; // Importa el ícono de flecha hacia arriba
 import "./MenuAgroServicios.css";
