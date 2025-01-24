@@ -5,24 +5,24 @@ import Imagenes from "./Imagenes";
 // Importa las imágenes específicas para este componente
 import imgA from "./img-campo/campo1.jpg";
 import imgB from "./img-campo/campo2.jpg";
-import imgC from "./img-campo/campo3.jpeg";
-import imgD from "./img-campo/campo4.jpeg";
-import imgE from "./img-campo/campo5.jpg";
-import imgF from "./img-campo/campo6.webp";
-import imgH from "./img-campo/campo7.webp";
-import imgI from "./img-campo/campo5.jpg";
+import imgC from "./img-campo/campo3.jpg";
+import imgD from "./img-campo/campo4.jpg";
+import imgE from "./img-campo/campo5.JPEG";
+import imgF from "./img-campo/campo6.jpg";
+import imgH from "./img-campo/campo7.jpg";
+import imgI from "./img-campo/campo8.jpg";
 
 const Trabajo2 = () => {
   // Creamos un arreglo con las imágenes específicas para este trabajo
   const imagenesTrabajo2 = [
-    { src: imgA, title: "Desmonte 1", description: "Descripción breve sobre Desmonte 1" },
-    { src: imgB, title: "Desmonte 2", description: "Descripción breve sobre Desmonte 2" },
-    { src: imgC, title: "Limpieza de Terreno 1", description: "Descripción breve sobre Limpieza de Terreno 1" },
-    { src: imgD, title: "Limpieza de Terreno 2", description: "Descripción breve sobre Limpieza de Terreno 2" },
-    { src: imgE, title: "Campo 1", description: "Descripción breve sobre Campo 1" },
-    { src: imgF, title: "Campo 2", description: "Descripción breve sobre Campo 2" },
-    { src: imgH, title: "Campo 3", description: "Descripción breve sobre Campo 3" },
-    { src: imgI, title: "Campo 4", description: "Descripción breve sobre Campo 4" },
+    { src: imgA, title: "Desmonte", description: "MANUCHO - Desmonte y limpieza de campo" },
+    { src: imgB, title: "Desmonte", description: "RINCON DE ÁVILA - Desmonte y limpieza de campo" },
+    { src: imgC, title: "Limpieza de Terreno ", description: "CULULÚ - Limpieza y demolición" },
+    { src: imgD, title: "Feedlot", description: "LLAMBÍ CAMPBELL - Excavación, limpieza, compactación y acopio de tierra" },
+    { src: imgE, title: "Tambos", description: "LLAMBÍ CAMPBELL - Limpieza de tambo y relleno con tierra nueva" },
+    { src: imgF, title: "Tanques de agua", description: "RINCON DE ÁVILA - Excavación, limpieza y rellenos" },
+    { src: imgH, title: "Zanjeo", description: "LAGUNA PAIVA - Zanjeo, para sacar el agua de una laguna" },
+    { src: imgI, title: "Acopio de tierra", description: "NELSON - Acopio de tierra y defensa " },
   ];
 
   return (

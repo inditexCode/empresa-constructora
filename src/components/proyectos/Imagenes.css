@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr) !important; /* 4 columnas por defecto */
   gap: 10px; /* Espacio entre las imágenes */
-  grid-auto-rows: 200px; /* Ajustar la altura de las filas */
+  grid-auto-rows: 230px; /* Ajustar la altura de las filas */
   width: 100%;
   max-width: 100%; /* Hacer que la galería se ajuste al tamaño disponible */
   overflow: hidden; /* Evita desbordamientos de las imágenes */
@@ -53,11 +53,13 @@
 .imagen {
   width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
   height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
-  object-fit: cover; /* Hace que las imágenes se ajusten sin deformarse */
-  object-position: center; /* Asegura que la imagen se enfoque en el centro */
+  object-fit: cover; /* Asegura que la imagen se ajuste completamente sin recortarse */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+  background-color: #000; /* Fondo para las áreas vacías */
   max-width: 100%; /* Evita que las imágenes se estiren más allá del contenedor */
   max-height: 100%; /* Limita la altura máxima para que no se desborden */
 }
+
 
 /* Media Queries para pantallas medianas y pequeñas */
 
@@ -76,13 +78,15 @@
 @media (max-width: 768px) {
   .galeria {
     grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
-    grid-auto-rows: 120px; /* Ajusta la altura de las filas */
+    grid-auto-rows: 150px; /* Ajusta la altura de las filas */
   }
   .imagen {
-    max-height: 120px; /* Limita la altura de las imágenes en pantallas pequeñas */
+    max-height: 220px; /* Limita la altura de las imágenes en pantallas pequeñas */
+    object-fit: cover;
+
   }
   .imagen-titulo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
     color: white;
@@ -100,13 +104,13 @@
 @media (max-width: 480px) {
   .galeria {
     grid-template-columns: 1fr !important; /* 1 columna en pantallas muy pequeñas */
-    grid-auto-rows: 100px; /* Ajusta la altura de las filas */
+    grid-auto-rows: 200px; /* Ajusta la altura de las filas */
   }
   .imagen {
-    max-height: 100px; /* Limita la altura de las imágenes en pantallas muy pequeñas */
+    max-height: 200px; /* Limita la altura de las imágenes en pantallas muy pequeñas */
   }
   .imagen-titulo {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
     color: white;

@@ -23,7 +23,7 @@ const MenuMovSuelo = () => {
     <>
       <div className="menu-mov-suelo-container">
    {/* Imagen con el título sobrepuesta */}
-   <div className="imagen-titulo-container">
+   <div className="imagen-titulo-container-mov">
           <div className="titulo-overlay">
             <h4>MOVIMIENTO DE SUELO</h4>
           </div>

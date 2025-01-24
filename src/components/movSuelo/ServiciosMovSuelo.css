@@ -20,7 +20,8 @@
   }
   
   .modulo-titulo-arreglo-servicio {
-    width: 30%;
+    width: 40%;
+    height: auto;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -29,8 +30,9 @@
   }
   
   .modulo-titulo-arreglo-servicio img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    object-fit: cover;
 
   }
   

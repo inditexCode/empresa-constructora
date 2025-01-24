@@ -13,25 +13,27 @@
 
   .titulo_agroservicios{
     background-color: #0c343d;
-
+    
     color: rgb(254, 254, 254);
     font-size: 1.6rem;
     padding: 10px 0;
     padding-left: 8px;
   }
   .modulo-titulo-arreglo {
-    width: 30%;
+    width: 50%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0c343d;
-
+    height: auto; /* Asegura que el contenedor tenga altura */
+    overflow: hidden; /* Evita que la imagen se desborde */
   }
   
   .modulo-titulo-arreglo img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa todo el alto */
+    object-fit: contain; /* Ajusta la imagen para cubrir el contenedor */
   }
   
   .modulo-separador-arreglo {

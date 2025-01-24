@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contacto.css'
 import FormContacto from './FormContactos'
-import imagen from './img/campo.jpg'
+import imagen from './img/2.jpg'
 import Footer from '../inicio/footer/Footer'
 
 const Contactos = () => {
