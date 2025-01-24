@@ -1,12 +1,5 @@
 import React from "react";
 import SeccionServicio from "./SeccionServicio"; // Importamos el componente reutilizable
-import imgArregloTanques from "./img/arregloTanque2.jpg";
-import imgCaminos from "./img/caminos.jpg";
-import imgDesmonte from "./img/desmonte.jpg";
-import imgFeedlot from "./img/feedlot.jpg";
-import imgLimpiezaTerrenos from "./img/limpTerreno.png";
-import imgReparacionTambo from "./img/reaparacionTambo.jpg";
-import imagen from "./img/Vacas.jpg";
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'; // Importa el ícono de flecha hacia arriba
 import "./MenuAgroServicios.css";
 import Footer from "../inicio/footer/Footer";
@@ -30,7 +23,7 @@ const MenuAgroServicios = () => {
           <div className="row">
             <SeccionServicio
               titulo="ARREGLOS DE TANQUES"
-              imagen={imgArregloTanques}
+              imagen="https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20agroservicos/otsmui4skj7qia9aukus"
               contenido={
                 <>
                   <p>
@@ -67,7 +60,7 @@ const MenuAgroServicios = () => {
 
             <SeccionServicio
               titulo="CÁMINOS"
-              imagen={imgCaminos}
+              imagen="https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20agroservicos/jhy47gmpflo09rcmfqyd"
               contenido={
                 <>
                   <p>
@@ -98,7 +91,7 @@ const MenuAgroServicios = () => {
 
             <SeccionServicio
               titulo="DESMONTES"
-              imagen={imgDesmonte}
+              imagen="https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20agroservicos/msxrrowfbyhxreube5xl"
               contenido={
                 <>
                   <p>
@@ -112,7 +105,6 @@ const MenuAgroServicios = () => {
                     <li className="LISTA">Transporte de material</li>
                   </ul>
                   <p>
-                
                   El trabajo comienza con el corte de árboles en leña, Posteriormente, se emplea maquinaria como retroexcavadoras
                    para extraer las raíces desde la base, asegurando que no quede vegetación residual que pueda interferir en el terreno.
                    Si es necesario, la leña y otros restos se transportan en camiones para dejar el espacio completamente despejado. 
@@ -128,7 +120,7 @@ const MenuAgroServicios = () => {
 
             <SeccionServicio
               titulo="FEEDLOT"
-              imagen={imgFeedlot}
+              imagen="https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20agroservicos/klq1rxuqecnu9pfynt2e"
               contenido={
                 <>
                   <p>
@@ -165,7 +157,7 @@ const MenuAgroServicios = () => {
 
             <SeccionServicio
               titulo="LIMPIEZA DE TERRENOS"
-              imagen={imgLimpiezaTerrenos}
+              imagen="https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20agroservicos/sphngpildt7ermdsyjfy"
               contenido={
                 <>
                   <p>
@@ -196,7 +188,7 @@ const MenuAgroServicios = () => {
 
             <SeccionServicio
               titulo="REPARACIÓN DE TAMBO"
-              imagen={imgReparacionTambo}
+              imagen="https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20agroservicos/fbd2jnyetlxkshyxckbh"
               contenido={
                 <>
                   <p>

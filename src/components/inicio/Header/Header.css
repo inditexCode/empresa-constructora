@@ -47,6 +47,8 @@
   line-height: 50px;
   font-weight: 900;
   letter-spacing: 0px;
+  color: white; /* Color del texto */
+  text-shadow: 4px 4px 4px rgba(30, 30, 30, 0.918); /* Sombra para mejorar la visibilidad sobre la imagen */
 
 }
 

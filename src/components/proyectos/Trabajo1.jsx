@@ -2,27 +2,50 @@ import React from "react";
 import "./Trabajo1.css"; // Asegúrate de importar los estilos
 import Imagenes from "./Imagenes";
 
-// Importa las imágenes específicas para este componente
-import img1 from "./img/1.webp";
-import img2 from "./img/2.jpg";
-import img3 from "./img/3.jpg";
-import img4 from "./img/4.jpg";
-import img5 from "./img/5.jpg";
-import img6 from "./img/7.jpg";
-import img7 from "./img/8.jpg";
-import img8 from "./img/9.jpg";
-
+// URLs de las imágenes en Cloudinary
 const Trabajo1 = () => {
-  // Creamos un arreglo con las imágenes específicas para este trabajo
+  // Creamos un arreglo con las URLs de las imágenes
   const imagenesTrabajo1 = [
-    { src: img1, title: "Excavación", description: "LLAMBÍ CAMPBELL - Movimiento suelo" },
-    { src: img2, title: "Colocación tubos", description: "LAGUNA PAIVA - Movimiento suelo" },
-    { src: img3, title: "Compactación suelo ", description: "LAGUNA PAIVA - Cancha de TENIS Movimiento suelo" },
-    { src: img4, title: "Albañileria", description: "IRIONDO - Comedero para animales Movimiento suelo" },
-    { src: img5, title: "Excavación", description: "NELSON - Venta de tierra Movimiento suelo" },
-    { src: img6, title: "Venta de tierra", description: "LLAMBÍ CAMPBELL - Viajes de tierra Movimiento suelo" },
-    { src: img7, title: "Zanjeo", description: "LAGUNA PAIVA - Zanjeo y Limpieza Movimiento suelo" },
-    { src: img8, title: "Nivelación", description: "LAGUNA PAIVA - Cancha de TENIS Movimiento suelo" },
+    { 
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/trabajosrealizados/agrocampo/ktyyatiupwoddb4expeq", 
+      title: "Excavación", 
+      description: "LLAMBÍ CAMPBELL - Movimiento suelo" 
+    },
+    { 
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/trabajosrealizados/agrocampo/jiijozkthvgxv98ls1pj", 
+      title: "Colocación tubos", 
+      description: "LAGUNA PAIVA - Movimiento suelo" 
+    },
+    { 
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/trabajosrealizados/agrocampo/naxjfxtozh1biarafare", 
+      title: "Compactación suelo", 
+      description: "LAGUNA PAIVA - Cancha de TENIS Movimiento suelo" 
+    },
+    { 
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/trabajosrealizados/agrocampo/mt0qqhakxgbpexer5c9u", 
+      title: "Albañileria", 
+      description: "IRIONDO - Comedero para animales Movimiento suelo" 
+    },
+    { 
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/trabajosrealizados/agrocampo/goxh0cdfap4cfn2b1kzc", 
+      title: "Excavación", 
+      description: "NELSON - Venta de tierra Movimiento suelo" 
+    },
+    { 
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/trabajosrealizados/agrocampo/nylzvv885khjhu3lexgh", 
+      title: "Venta de tierra", 
+      description: "LLAMBÍ CAMPBELL - Viajes de tierra Movimiento suelo" 
+    },
+    { 
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/trabajosrealizados/agrocampo/cz40iizihrfupannwi41", 
+      title: "Zanjeo", 
+      description: "LAGUNA PAIVA - Zanjeo y Limpieza Movimiento suelo" 
+    },
+    { 
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/trabajosrealizados/agrocampo/ef45wj2kv6rbywnjtxoi", 
+      title: "Nivelación", 
+      description: "LAGUNA PAIVA - Cancha de TENIS Movimiento suelo" 
+    },
   ];
 
   return (

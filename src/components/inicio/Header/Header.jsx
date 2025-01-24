@@ -1,16 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";  // Importamos el componente Link
-import img1 from "./img/camiontierra.webp";
-// Eliminamos la importación de img2, ya que usaremos el enlace de Cloudinary
-import img3 from "./img/maqui.jpg";
-import img4 from "./img/maqui2.jpg";
+
 import "./Header.css"; // Asegúrate de tener el archivo CSS para los estilos
 
 const Header = () => {
   // Definir las imágenes, títulos y rutas de cada imagen
   const images = [
     { 
-      src: img1, 
+      // Usamos el enlace de Cloudinary para la imagen
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/vbcq1mnbp5o6xpfqkvbj", 
       title: "Más de 10 años brindando servicios de excelente calidad", 
       buttonText: "Ver más", 
       link: "/agroservicios"  // Ruta para el primer botón
@@ -23,13 +21,15 @@ const Header = () => {
       link: "/movimientos-de-suelo"  // Ruta para el segundo botón
     },
     { 
-      src: img3, 
+      // Usamos el enlace de Cloudinary para la imagen
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/movsuelo/ytdbxwilclycymdmnrsl", 
       title: "Contactanos y sacate las dudas", 
       buttonText: "Nuestro trabajos", 
       link: "/trabajos-realizados"  // Ruta para el tercer botón
     },
     { 
-      src: img4, 
+      // Usamos el enlace de Cloudinary para la imagen
+      src: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/movsuelo/oxsyqcd9gjknwemxqiiz", 
       title: "Alquileres de Máquinas, venta de tierra y escombros", 
       buttonText: "Contactanos", 
       link: "/contacto"  // Ruta para el tercer botón

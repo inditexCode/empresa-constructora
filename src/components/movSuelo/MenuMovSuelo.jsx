@@ -1,29 +1,32 @@
 import React from 'react';
 import ServiciosMovSuelo from './ServiciosMovSuelo'; // Importamos el componente reutilizable
-import imgCompactacion from './img/compactacion.jpg'; // Ruta de imagen
-import imgDemoliciones from './img/demolicion.jpg'; // Ruta de imagen
-import imgNivelaciones from './img/nivelacion.jpg'; // Ruta de imagen
-import imgVentaEscombro from './img/zanjeo.jpg'; // Ruta de imagen
-import imgVentaTierra from './img/tierra.jpg'; // Ruta de imagen
-import imgZanjeo from './img/escombros.png'; // Ruta de imagen
-import imagen from './img/maqui.jpg'; // Ruta de imagen
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'; // Importa el ícono de flecha hacia arriba
 
 import "./MenuMovSuelo.css"; // Estilos generales para el menú
 import Footer from "../inicio/footer/Footer";
 import TextRating from '../agroServicios/TextRating'; // Importa el componente de calificación
 
-
 const MenuMovSuelo = () => {
     // Función para desplazarse hacia el principio de la página
     const scrollToTop = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
+
+    // URLs de las imágenes en Cloudinary
+    const imagenes = {
+        compactacion: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20mov-suelo/muu4xset9t9ckr6uscjl",
+        demoliciones: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20mov-suelo/jylr8tf6uplt49zbesgl",
+        nivelaciones: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20mov-suelo/zrkgq4xx587seav6ukaa",
+        zanjeo: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20mov-suelo/shvsjq8sgnwhx5t0tuvh",
+        ventaTierra: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20mov-suelo/xiqbk5zszj4rezpwhawq",
+        ventaEscombro: "https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/pagina%20mov-suelo/h74w0dhjdskrfhkctjl6"
+    };
+
   return (
     <>
       <div className="menu-mov-suelo-container">
-   {/* Imagen con el título sobrepuesta */}
-   <div className="imagen-titulo-container-mov">
+        {/* Imagen con el título sobrepuesta */}
+        <div className="imagen-titulo-container-mov">
           <div className="titulo-overlay">
             <h4>MOVIMIENTO DE SUELO</h4>
           </div>
@@ -32,7 +35,7 @@ const MenuMovSuelo = () => {
           <div className="menu-mov-suelo-row">
             <ServiciosMovSuelo
               titulo="COMPACTACIÓN"
-              imagen={imgCompactacion}
+              imagen={imagenes.compactacion}
               contenido={
                 <>
                   <p>La compactación de suelo es un paso esencial en la preparación de terrenos para la construcción, 
@@ -57,7 +60,7 @@ const MenuMovSuelo = () => {
 
             <ServiciosMovSuelo
               titulo="DEMOLICIONES"
-              imagen={imgDemoliciones}
+              imagen={imagenes.demoliciones}
               contenido={
                 <>
                   <p>
@@ -82,7 +85,7 @@ const MenuMovSuelo = () => {
 
             <ServiciosMovSuelo
               titulo="NIVELACIONES"
-              imagen={imgNivelaciones}
+              imagen={imagenes.nivelaciones}
               contenido={
                 <>
                   <p>La nivelación de suelo es un paso esencial en la preparación de terrenos para la construcción de suelos,
@@ -107,7 +110,7 @@ const MenuMovSuelo = () => {
 
             <ServiciosMovSuelo
               titulo="ZANJEO"
-              imagen={imgVentaEscombro}
+              imagen={imagenes.zanjeo}
               contenido={
                 <>
                   <p>La excavación de zanjas es un proceso clave en la preparación de terrenos para proyectos de infraestructura, 
@@ -134,7 +137,7 @@ const MenuMovSuelo = () => {
 
             <ServiciosMovSuelo
               titulo="VENTA DE TIERRA"
-              imagen={imgVentaTierra}
+              imagen={imagenes.ventaTierra}
               contenido={
                 <>
                   <p>Ofrecemos tierra negra y colorada de alta calidad, ideal para relleno, fabricación de ladrillos,
@@ -158,7 +161,7 @@ const MenuMovSuelo = () => {
 
             <ServiciosMovSuelo
               titulo="VENTA DE ESCOMBROS"
-              imagen={imgZanjeo}
+              imagen={imagenes.ventaEscombro}
               contenido={
                 <>
                   <p>La venta de escombros es una solución eficiente y económica para proyectos de construcción, para cimientos de casas por ej,
@@ -183,12 +186,11 @@ const MenuMovSuelo = () => {
           </div>
         </div>
       </div>
-         {/* Flecha de desplazamiento al principio de la página */}
-         <div className="scroll-to-top" onClick={scrollToTop}>
+      {/* Flecha de desplazamiento al principio de la página */}
+      <div className="scroll-to-top" onClick={scrollToTop}>
         <KeyboardDoubleArrowUpIcon style={{ fontSize: 80}} />
       </div>
       <Footer />
-      
     </>
   );
 };

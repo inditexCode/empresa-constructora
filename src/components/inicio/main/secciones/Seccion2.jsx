@@ -1,23 +1,35 @@
 import React from "react";
 import "./Seccion2.css"; // Asegúrate de importar los estilos
-import Icon1 from "./img/reloj.png"; // Importa tus imágenes
-import Icon2 from "./img/retro.png";
-import Icon3 from "./img/exc.png";
 
 const Seccion2 = () => {
   return (
     <div className="seccion2-container">
       <div className="icon-row">
         <div className="icon-item">
-          <img src={Icon1} alt="Icono 1" className="icon-image" />
+          {/* Reemplazo del ícono de reloj con la URL */}
+          <img 
+            src="https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/phjbgear6p1vziq4nec3" 
+            alt="Icono 1" 
+            className="icon-image" 
+          />
           <p className="icon-title">10 AÑOS JUNTOS</p>
         </div>
         <div className="icon-item">
-          <img src={Icon2} alt="Icono 2" className="icon-image" />
+          {/* Reemplazo del ícono retro con la URL */}
+          <img 
+            src="https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/b6hirbr3fnshdtdaerj3" 
+            alt="Icono 2" 
+            className="icon-image" 
+          />
           <p className="icon-title">AGROSERVICIOS</p>
         </div>
         <div className="icon-item">
-          <img src={Icon3} alt="Icono 3" className="icon-image" />
+          {/* Reemplazo del ícono exc con la URL */}
+          <img 
+            src="https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/oekptdnizxturej5rsuf" 
+            alt="Icono 3" 
+            className="icon-image" 
+          />
           <p className="icon-title">MOVIMIENTO DE SUELO</p>
         </div>
       </div>

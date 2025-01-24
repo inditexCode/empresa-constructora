@@ -61,16 +61,17 @@ body {
     grid-template-columns: repeat(3, 1fr); /* 3 columnas */
     gap: 0; /* Sin espacio entre las imágenes */
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
 
 }
 
 /* Estilo de cada imagen dentro del grid */
 .image-grid img {
 
-    width: 100%;
-    height: 100%; /* Altura fija */
-    object-fit: cover; /* Las imágenes se ajustan sin perder proporciones */
+    width: 100%; /* La imagen ocupa el ancho del contenedor */
+    height: auto; /* Altura proporcional */
+    aspect-ratio: 4 / 3; /* Relación de aspecto fija (puedes ajustar) */
+    object-fit: cover; /* Las imágenes se adaptan sin deformarse */
 }
 .title-img-menu{
     background-color: #ffb600;
@@ -91,13 +92,19 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 columnas */
         gap: 0; /* Sin espacio entre las imágenes */
-        margin-top: 20px;
-        padding-top: 20px;
-    
+        object-fit:cover; /* Asegura que la imagen se vea completa sin recorte */ 
     }
     .title-img-menu .titulo-img-menu{
         font-size: 1.6rem;
     }
+    .image-grid img{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+        gap: 0; /* Sin espacio entre las imágenes */
+        height: auto;
+        object-fit:cover; /* Asegura que la imagen se vea completa sin recorte */ 
+    }
+  
 }
 
 @media (min-width: 200px) and(max-width: 488px) {
@@ -111,6 +118,7 @@ body {
         font-size: 1.2rem;
     }
     
+    
 }
 @media (min-width: 300px) and (max-width: 548px) {
     .agroservicios, .construccion, .movimientoSuelo {
@@ -123,12 +131,11 @@ body {
         padding: 25px;
     }
     
-    .image-grid {
+    .image-grid img{
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 columnas */
         gap: 0; /* Sin espacio entre las imágenes */
-        margin-top: 20px;
-        padding-top: 20px;
-    
+        object-fit:cover; /* Asegura que la imagen se vea completa sin recorte */ 
     }
+    
 }

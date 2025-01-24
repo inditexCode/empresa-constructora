@@ -1,217 +1,127 @@
 /* Estilos generales */
 .contenedor-seccion4 {
-    padding: 100px 20px; /* Padding arriba y abajo */
-    box-sizing: border-box;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    overflow: hidden;
-    width: 100%;
-    max-width: 1800px;
-  }
-  
-  /* Contenedor principal en flexbox */
-  .flex-container {
-    padding: 18px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    gap: 20px;
-    height: auto;
-    /*     flex-wrap: wrap;*/
-  }
-  
+  padding: 100px 20px; /* Padding arriba y abajo */
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1800px;
+}
+
+/* Contenedor principal en flexbox */
+.flex-container {
+  padding: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  gap: 20px;
+  height: auto;
+}
+
 /* Título de la sección */
 .flex-container .section-title {
-    width: 100%; /* Asegura que ocupe el ancho completo */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    margin: 0;
-    
-    /* Establecemos la imagen de fondo */
-    background-image: url('./img/img-retro.jpg');
-    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita la imagen */
-    
-    /* Mezclar la imagen con un color semitransparente para un efecto sutil */
-    background-color: rgba(255, 255, 255, 0); /* Color blanco transparente */
-    background-blend-mode: overlay; /* Mezcla la imagen con el color de fondo */
-    
-    height: 450px; /* Ajusta el tamaño según sea necesario */
-    padding: 20px;
-  }
-  
-  /* Aseguramos que el h2 dentro del título sea en negrita */
-  .flex-container .section-title h2 {
-    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
-    font-weight: bold; /* Aplica la negrita directamente al h2 */
-    font-size: 3rem;
+  width: 100%; /* Asegura que ocupe el ancho completo */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin: 0;
 
-  }
- 
-  
+  /* Establecemos la imagen de fondo desde una URL */
+  background-image: url('https://res.cloudinary.com/du3gxdenp/image/upload/f_auto,q_auto/v1/canani/movsuelo/t27mkbqc3g6mzysmzips'); /* Cambia este enlace por la URL deseada */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
 
-  
-  /* Texto de la sección */
-  .flex-container .section-text {
-    width: 100%; /* Asegura que el texto ocupe el 100% del ancho disponible */
-    position: relative;
-  }
-  
-  .flex-container .section-text .text-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #404041;
-    margin-bottom: 20px;
-  }
-  
-  .text-content ul {
-    color: rgb(58, 56, 56);
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  
-  .flex-container .section-text .text-content {
-    position: relative;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0  0 4px 4px #0c343d; /* Agrega una sombra suave */
+  /* Mezclar la imagen con un color semitransparente para un efecto sutil */
+  background-color: rgba(255, 255, 255, 0); /* Color blanco transparente */
+  background-blend-mode: overlay; /* Mezcla la imagen con el color de fondo */
+
+  height: auto; /* Ajusta el tamaño según sea necesario */
 }
-  
-  /* Eliminar la sección de foto (ahora solo tenemos la imagen como fondo del título) */
-  .flex-container .section-photo {
-    display: none;
+
+/* Aseguramos que el h2 dentro del título sea en negrita */
+.flex-container .section-title h2 {
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+  font-weight: bold; /* Aplica la negrita directamente al h2 */
+  font-size: 3rem;
+}
+
+/* Texto de la sección */
+.flex-container .section-text {
+  width: 100%; /* Asegura que el texto ocupe el 100% del ancho disponible */
+  position: relative;
+}
+
+.flex-container .section-text .text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #404041;
+  margin-bottom: 20px;
+}
+
+.text-content ul {
+  color: rgb(58, 56, 56);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.flex-container .section-text .text-content {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 4px 4px #0c343d; /* Agrega una sombra suave */
+}
+/* Media Queries para pantallas medianas y pequeñas */
+/* Media Queries para pantallas medianas y pequeñas */
+
+/* Media Queries para pantallas más pequeñas (hasta 1132px) */
+@media (max-width: 1132px) {
+  .flex-container {
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Alinea los elementos al centro */
   }
-  
-  /* Media Queries para pantallas medianas (entre 1788px y 994px) */
-  @media (max-width: 1788px) and (min-width: 1132px) {
-    .flex-container {
-      flex-wrap: nowrap;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .flex-container .section-title,
-    .flex-container .section-separator {
-      width: auto;
-    }
+
+  .flex-container .section-title {
+    width: 100%; /* Asegura que el título ocupe el 100% del ancho */
+    background-size: cover; /* Asegura que la imagen se ajuste correctamente */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0); /* Mantener el color transparente */
+    min-height: 300px; /* Establece una altura mínima para que la imagen se vea bien */
+    height: auto; /* Ajusta el tamaño al contenido */
   }
-  
-  /* Media Queries para pantallas más pequeñas (hasta 994px) */
-  @media (max-width: 1132px) {
-    .flex-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .text-content ul {
-      padding: 15px 20px;
-    }
-  
-    .flex-container .section-title {
-      width: 100%;
-    }
-  
-    .flex-container .section-separator {
-      display: none;
-    }
-  
-    .flex-container .section-text {
-      width: 100%;
-    }
-  
-    .flex-container .section-text .text-content {
-      padding: 10px;
-    }
+
+  .flex-container .section-text {
+    width: 100%; /* Asegura que el texto ocupe el 100% del ancho */
   }
-  
-  /* Media Queries para pantallas más pequeñas (hasta 480px) */
-  @media (max-width: 740px) {
-    .contenedor-seccion4 {
-      padding: 60px 10px;
-    }
-  
-    .flex-container .section-title h2 {
-      font-size: 1.5rem;
-    }
-  
-    .flex-container .section-text .text-content p {
-      font-size: 0.9rem;
-    }
-    .flex-container .section-title {
-        background-size: 100%; /* Hace la imagen aún más pequeña en pantallas muy pequeñas */
-        height: 200px; /* Ajusta la altura según sea necesario */
-      }
+
+  .flex-container .section-text .text-content {
+    padding: 10px;
   }
-  
+}
 
-/*
+/* Media Queries para pantallas más pequeñas (hasta 740px) */
+@media (max-width: 740px) {
+  .contenedor-seccion4 {
+    padding: 60px 0; /* Reduce el padding en pantallas más pequeñas */
+  }
 
-import React from "react";
-import "./Seccion4.css";
-import img from "./img/img-retro.jpg"; // Importa tus imágenes
+  .flex-container .section-title h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
+  }
 
-const Seccion4 = () => {
-  return (
-    <div className="contenedor-seccion4">
+  .flex-container .section-text .text-content p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
 
-      <div className="flex-container">
-        <div className="section-title">
-          <h2>¿Quiénes Somos?</h2>
-        </div>
-        <div className="section-separator">
-          <hr className="sep-seccion4"/>
-        </div>
-        <div className="section-text">
-          <div className="text-content">
-            <p>
-              Somos una empresa dedicada a proporcionar soluciones innovadoras y
-              personalizadas para nuestros clientes. Nuestro equipo está formado
-              por profesionales apasionados que trabajan juntos para crear
-              productos de alta calidad.
-            </p>
-            <ul>
-              <li><span>Plazo pactado</span></li>
-              <li>Calidad requerida</li>
-              <li>Precio estipulado</li>
-            </ul>
-            <p>
-              Brindando a nuestros clientes asesoramiento técnico para resolver las exigencias a la medida de sus necesidades llegando siempre 
-              al objetivo final: entregar la obra cumpliendo tiempos y pautas establecidas.  
-            </p>
-            <p>
-              Este estilo nos permite desde hace más de 15 años enorgullecernos de un crecimiento sostenido reflejado en numerosos clientes que 
-              nos siguen eligiendo como un verdadero socio estratégico.   
-            </p>
-            <p>
-              Nuestra empresa basa su generación de confianza en la calidad de sus maquinarias y en la eficiencia de sus servicios.
-            </p>
-          </div>
-        </div>
-        <div className="section-photo">
-          <img src={ img } alt="Imagen descriptiva"  className="responsive-img"/>
-        </div>
-      </div>
-
-    </div>
-  );
-};
-
-export default Seccion4;
-
-
-*/
-
-
-
-/*
-
-
-
-*/
+  .flex-container .section-title {
+    min-height: 250px; /* Ajusta una altura mínima aún menor para pantallas muy pequeñas */
+    background-size: cover; /* Asegura que la imagen cubra el fondo correctamente */
+  }
+}
