@@ -69,12 +69,17 @@ h1::after {
   display: block;
 }
 
+
 /* Estilo de la fila */
 .menu-mov-suelo-row {
   display: flex;
   flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas en pantallas pequeñas */
   justify-content: center; /* Centra los elementos dentro de la fila */
   gap: 20px; /* Espacio entre los elementos */
+}
+.menu-mov-suelo-row li {
+  color: black;
+  font-weight: bold;
 }
 
 /* Estilo de los componentes hijos (en este caso, ServiciosMovSuelo) */
